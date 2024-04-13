@@ -1,0 +1,51 @@
+:root
+{
+    --primary-color : #fff; 
+    --secondary-color: #000; 
+    --terciary-color: #3C3B6E;
+    --cuartiary-color: #B22234;
+    --fifth-color: #7C878E;
+    --color-fondo-header-1: #1e4376;
+    --color-fondo-header-2: #2a548c;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-section-1
+{
+    background-color: var(--color-fondo-header-1);
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header-section-1 > .menu-icon
+{
+    width: 60px;
+    height: 50px;
+}
+
+.header-section-1 > .search-icon
+{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.header-section-2
+{
+    background-color: var(--color-fondo-header-2);
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../IMAGEN/FONDO-HEADER-U.S.A..jpg");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-color);
+}
