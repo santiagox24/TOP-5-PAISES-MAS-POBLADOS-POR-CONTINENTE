@@ -66,6 +66,11 @@ main
     border-radius: 20px;
 }
 
+.contenedor-banderas > a
+{
+    text-decoration: none;
+}
+
 .contenedor-bandera
 {
     margin-right: 45px;
