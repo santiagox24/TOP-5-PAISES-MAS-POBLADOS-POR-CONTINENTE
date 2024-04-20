@@ -19,7 +19,7 @@
 .header-section-1
 {
     background-color: var(--color-fondo-header-1);
-    padding: 50px 30px 50px 30px;
+    padding: 40px 30px 40px 10px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -27,14 +27,14 @@
 
 .header-section-1 > .menu-icon
 {
-    width: 110px;
-    height: 100px;
+    width: 100px;
+    height: 90px;
 }
 
 .header-section-1 > .search-icon
 {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-right: 20px;
 }
 
