@@ -64,16 +64,20 @@ main
     align-items: center;
 }
 
-.section-1
+main > section
 {
     width: 85%;
+    margin: 40px 0px 40px 0px;
 }
 
-.section-1 > h1
+.titulo-seccion
 {
     font-size: 35px;
-    color: var(--color-fondo-header-1);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--color-fondo-header-1);
+    color: #fff;
+    padding: 15px;
+
 }
 
 .main-section-1
@@ -88,9 +92,48 @@ main
     margin-bottom: 35px;
 }
 
-.main-section-1 > p
+p
+{
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8em;
+}
+
+.titulo-seccion-2
+{
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--color-fondo-header-1);
+    padding: 15px;
+
+}
+
+.main-section-2
+{
+    margin-top: 35px;
+}
+
+.main-section-2-containers
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-section-2-containers > h2
 {
     color: var(--color-fondo-header-1);
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-size: 30px;
+}
+
+.main-section-2-containers > img
+{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.main-section-2-containers > p
+{
+
 }
