@@ -100,16 +100,6 @@ p
     line-height: 1.8em;
 }
 
-.titulo-seccion-2
-{
-    color: #fff;
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: var(--color-fondo-header-1);
-    padding: 15px;
-
-}
-
 .main-section-2
 {
     margin-top: 35px;
@@ -132,4 +122,3 @@ p
     width: 100%;
     margin-bottom: 25px;
 }
-
