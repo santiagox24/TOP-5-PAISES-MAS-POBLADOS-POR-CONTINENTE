@@ -154,10 +154,10 @@ p {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+/*.prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
+}*/
 
 /* Caption text */
 .text {
@@ -209,4 +209,115 @@ p {
   to {
     opacity: 1;
   }
+}
+
+/* Estilo general para el contenedor del quiz */
+.portada-quiz {
+  background: linear-gradient(to bottom, #003366 0%, #0077CC 100%);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Estilo para el botón del quiz */
+.quiz-button {
+  background: linear-gradient(to bottom, #0055CC 0%, #0099FF 100%);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Cambio de color al pasar el cursor por el botón */
+.quiz-button:hover {
+  background: linear-gradient(to bottom, #0044AA 0%, #0088DD 100%);
+}
+
+/* Estilos generales del contenedor */
+.mySlides {
+  font-family: 'Arial', sans-serif;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background: linear-gradient(to right, #74ABE2, #5563DE); /* Degradado azul */
+}
+
+/* Título del Quiz */
+.quiz-title {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para cada pregunta */
+.question {
+  color: #FFF;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Estilos para las opciones */
+.option {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contenedor-preguntas
+{
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.option:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Botón para enviar las respuestas */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4461C2;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #33408D;
+}
+
+/* Estilo para botón de navegación en el quiz */
+.navigation-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 20px;
+  background-color: #FFF;
+  color: #4461C2;
+  text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navigation-btn:hover {
+  background-color: #E0E0E0;
 }

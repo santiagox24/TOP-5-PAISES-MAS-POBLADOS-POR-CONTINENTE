@@ -144,17 +144,27 @@
       </section>
       <section class="main-section-4">
         <h2 class="titulo-seccion">QUIZ</h2>
-        <div class="portada-quiz">
-            <h3>¡PRUEBA TUS CONOCIMIENTOS DE U.S.A.!</h3>
-            <button>COMENZAR</button>
+        <div class="portada-quiz" id="quiz-portada">
+          <h3>¡PRUEBA TUS CONOCIMIENTOS DE U.S.A.!</h3>
+          <button class="quiz-button" id="button-quiz">COMENZAR</button>
         </div>
-        <div class="carrusel desaparecer">
-          <div class="slideshow-container desaparecer">
+        <div class="carrusel desaparecer" id="carrusel-quiz">
+          <div class="slideshow-container">
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
               <div class="numbertext">1 / 3</div>
               <img src="img1.jpg" style="width: 100%" />
-              <div class="text">Caption Text</div>
+              <h3 class="quiz-title">Group 2: Choose your preferred season:</h3>
+              <form class="contenedor-preguntas">
+                <input type="radio" id="spring" name="season" value="spring" />
+                <label for="spring">Spring</label><br />
+                <input type="radio" id="summer" name="season" value="summer" />
+                <label for="summer">Summer</label><br />
+                <input type="radio" id="autumn" name="season" value="autumn" />
+                <label for="autumn">Autumn</label><br />
+                <input type="radio" id="winter" name="season" value="winter" />
+                <label for="winter">Winter</label>
+              </form>
             </div>
 
             <!-- Next and previous buttons -->
@@ -164,8 +174,7 @@
           <br />
 
           <!-- The dots/circles -->
-          <div>
-            style="text-align: center">
+          <div style="text-align: center">
             <span class="dot" onclick="currentSlide(1)"></span>
           </div>
         </div>

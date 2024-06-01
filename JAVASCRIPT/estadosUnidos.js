@@ -15,18 +15,31 @@ let pregunta = {
       respuestaCorrecta: false,
     },
     {
-      textoOpcion: "Abraham Lincon",
+      textoOpcion: "Abraham Lincoln",
       respuestaCorrecta: false,
     },
   ],
 };
 
 let numPreguntas = 0;
+let carruselContenedora = document.getElementById("carrusel-quiz")
+let button = document.getElementById("button-quiz")
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+let portadaQuiz = document.getElementById("quiz-portada")
+let slideIndex = 1;
+
+function activarQuiz() 
+{
+  portadaQuiz.className += " desaparecer"
+  carruselContenedora.classList.remove("desaparecer")
+  showSlides(slideIndex);
+  button.className += " desaparecer"
+}
+
+button.addEventListener("click",activarQuiz)
 
 Math.floor(Math.random() * 100);
-
-let slideIndex = 1;
-showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -40,8 +53,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  slides = document.getElementsByClassName("mySlides");
+  dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;
   }
