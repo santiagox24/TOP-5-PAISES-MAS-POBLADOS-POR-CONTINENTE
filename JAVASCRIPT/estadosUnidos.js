@@ -1,43 +1,20 @@
-let pregunta = {
-  enunciado_pregunta: "¿Cual fue el primer presidente de los Estados Unidos?",
-  url_imagen: "",
-  opciones: [
-    {
-      textoOpcion: "Benjamin Franklin",
-      respuestaCorrecta: false,
-    },
-    {
-      textoOpcion: "George Washington",
-      respuestaCorrecta: true,
-    },
-    {
-      textoOpcion: "Donald Trump",
-      respuestaCorrecta: false,
-    },
-    {
-      textoOpcion: "Abraham Lincoln",
-      respuestaCorrecta: false,
-    },
-  ],
-};
 
 let numPreguntas = 0;
-let carruselContenedora = document.getElementById("carrusel-quiz")
-let button = document.getElementById("button-quiz")
+let carruselContenedora = document.getElementById("carrusel-quiz");
+let button = document.getElementById("button-quiz");
 let slides = document.getElementsByClassName("mySlides");
 let dots = document.getElementsByClassName("dot");
-let portadaQuiz = document.getElementById("quiz-portada")
+let portadaQuiz = document.getElementById("quiz-portada");
 let slideIndex = 1;
 
-function activarQuiz() 
-{
-  portadaQuiz.className += " desaparecer"
-  carruselContenedora.classList.remove("desaparecer")
+function activarQuiz() {
+  portadaQuiz.className += " desaparecer";
+  carruselContenedora.classList.remove("desaparecer");
   showSlides(slideIndex);
-  button.className += " desaparecer"
+  button.className += " desaparecer";
 }
 
-button.addEventListener("click",activarQuiz)
+button.addEventListener("click", activarQuiz);
 
 Math.floor(Math.random() * 100);
 
@@ -69,4 +46,37 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+}
+
+function verificarSeleccion(radios) {
+  for (let i = 0; i < radios.length; i++) {
+    if (radios[i].checked) {
+      return true
+    }
+  }
+  return false
+}
+
+function finishQuiz() 
+{
+  let forms = document.getElementsByClassName("contenedor-preguntas")
+  let mensajeError = ""
+  let seleccionIncompleta = false
+
+  for(let i=1;i<=forms.length;i++)
+    {
+      let preguntas = document.getElementsByName("pregunta_" + i)
+      if(!verificarSeleccion(preguntas))
+        {
+          mensajeError += "Por favor, selecciona una opción en la pregunta " + i + "\n"
+          seleccionIncompleta = true
+        }
+    }
+    if(seleccionIncompleta)
+      {
+        alert(mensajeError)
+      }else
+      {
+
+      }
 }
