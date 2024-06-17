@@ -1,17 +1,54 @@
-
+import { preguntasSeleccionadas } from "./preguntas.js";
 let numPreguntas = 0;
 let carruselContenedora = document.getElementById("carrusel-quiz");
 let button = document.getElementById("button-quiz");
 let slides = document.getElementsByClassName("mySlides");
 let dots = document.getElementsByClassName("dot");
 let portadaQuiz = document.getElementById("quiz-portada");
+let prevButton = document.getElementById("prevButton");
+let nextButton = document.getElementById("nextButton");
+let finishButton = document.getElementById("finishButton");
+
+nextButton.addEventListener("click", function () {
+  plusSlides(1);
+});
+
+prevButton.addEventListener("click", function () {
+  plusSlides(-1);
+});
+
+finishButton.addEventListener("click", finishQuiz);
+
 let slideIndex = 1;
+
+function llenarPreguntas() 
+{
+  let enunciados = document.getElementsByClassName("quiz-title")
+
+  for(let i=0;i<preguntasSeleccionadas.length;i++)
+    {
+      enunciados[i].textContent = preguntasSeleccionadas[i]["enunciado_pregunta"]
+    }
+
+    for(let i=0;i<preguntasSeleccionadas.length;i++)
+      {
+        let opciones = document.getElementsByClassName("pregunta-" + i)
+
+        for(let j=0;j<opciones.length;j++)
+          {
+            opciones[j].textContent = preguntasSeleccionadas[i]["opciones"][j]["textoOpcion"]
+          }
+      }
+}
 
 function activarQuiz() {
   portadaQuiz.className += " desaparecer";
   carruselContenedora.classList.remove("desaparecer");
   showSlides(slideIndex);
   button.className += " desaparecer";
+
+  llenarPreguntas()
+  
 }
 
 button.addEventListener("click", activarQuiz);
@@ -51,32 +88,27 @@ function showSlides(n) {
 function verificarSeleccion(radios) {
   for (let i = 0; i < radios.length; i++) {
     if (radios[i].checked) {
-      return true
+      return true;
     }
   }
-  return false
+  return false;
 }
 
-function finishQuiz() 
-{
-  let forms = document.getElementsByClassName("contenedor-preguntas")
-  let mensajeError = ""
-  let seleccionIncompleta = false
+function finishQuiz() {
+  let forms = document.getElementsByClassName("contenedor-preguntas");
+  let mensajeError = "";
+  let seleccionIncompleta = false;
 
-  for(let i=1;i<=forms.length;i++)
-    {
-      let preguntas = document.getElementsByName("pregunta_" + i)
-      if(!verificarSeleccion(preguntas))
-        {
-          mensajeError += "Por favor, selecciona una opción en la pregunta " + i + "\n"
-          seleccionIncompleta = true
-        }
+  for (let i = 1; i <= forms.length; i++) {
+    let preguntas = document.getElementsByName("pregunta_" + i);
+    if (!verificarSeleccion(preguntas)) {
+      mensajeError +=
+        "Por favor, selecciona una opción en la pregunta " + i + "\n";
+      seleccionIncompleta = true;
     }
-    if(seleccionIncompleta)
-      {
-        alert(mensajeError)
-      }else
-      {
-
-      }
+  }
+  if (seleccionIncompleta) {
+    alert(mensajeError);
+  } else {
+  }
 }

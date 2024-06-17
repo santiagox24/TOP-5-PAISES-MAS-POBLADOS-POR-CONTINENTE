@@ -107,7 +107,7 @@ footer
 
 footer > p
 {
-    font-size: 25psx;
+    font-size: 25px;
     color: var(--text-color);
     font-weight: 600;
 }
