@@ -316,33 +316,34 @@ let preguntas = [
   },
 ];
 
-let selecciones = []
-
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-let preguntasSeleccionadas = []
+function seleccionarPreguntasAleatorias() {
+  let preguntaSeleccionadas = [];
+  let selecciones = [];
 
-for(let i=0;i<5;i++)
-    {
-        let indice = getRandomInt(0,preguntas.length)
 
-        if(selecciones.includes(indice))
-            {
-                while(true)
-                    {
-                        indice = getRandomInt(0,preguntas.length-1)
-                        if(!selecciones.includes(indice))
-                            {
-                                break
-                            }
-                    }
-                    selecciones.push(indice)
-            }
-            preguntasSeleccionadas.push(preguntas[indice])
+  for (let i = 0; i < 5; i++) {
+    let indice = getRandomInt(0, preguntas.length - 1);
+    console.log(indice)
+    if (selecciones.includes(indice)) {
+      while (true) {
+        indice = getRandomInt(0, preguntas.length - 1);
+        if (!selecciones.includes(indice)) {
+          break;
+        }
+      }
     }
+    selecciones.push(indice);
+    preguntaSeleccionadas.push(preguntas[indice]);
+  }
 
-export {preguntasSeleccionadas}
+  return preguntaSeleccionadas;
+}
+
+
+export {seleccionarPreguntasAleatorias}
