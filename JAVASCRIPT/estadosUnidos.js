@@ -10,6 +10,9 @@ let nextButton = document.getElementById("nextButton");
 let finishButton = document.getElementById("finishButton");
 let buttonReiniciar = document.getElementById("button-reiniciar")
 let portadaFinalizar = document.getElementById("portada-finalizar")
+let preguntasSeleccionadas = []
+
+
 
 function logicaReiniciar()
 {
@@ -58,7 +61,10 @@ function activarQuiz() {
   slideIndex = 1
   showSlides(slideIndex);
   button.className += " desaparecer";
-  let preguntasSeleccionadas = seleccionarPreguntasAleatorias()
+  preguntasSeleccionadas = seleccionarPreguntasAleatorias()
+
+  
+$("input[type=radio]").prop('checked', false);
 
   llenarPreguntas(preguntasSeleccionadas)
   
@@ -124,7 +130,50 @@ function finishQuiz() {
     alert(mensajeError);
   } else 
   {
+    let selecciones  = getSelecciones()
+    let puntos = puntaje(selecciones)
+    console.log(puntos)
     carruselContenedora.classList.add("desaparecer")
     portadaFinalizar.classList.remove("desaparecer")
   }
+}
+
+function getSelecciones(){
+  let arr = []
+
+  for(let i=1;i<=5;i++){
+    let respuestas = []
+    let radio = document.getElementsByName("pregunta_" + i);
+    
+    for(let j=0;j<4;j++){
+      respuestas.push(radio[j].checked)
+    }
+
+    arr.push(respuestas)
+  }
+
+  return arr
+}
+
+function puntaje(seleccionadas)
+{
+  let puntajeFinal = 0
+  let diferentes = false
+
+  for(let i=0;i<5;i++)
+    {
+      for(let j=0;j<4;j++)
+        {
+          if(!(preguntasSeleccionadas[i]["opciones"][j]["respuestaCorrecta"] == seleccionadas[i][j]))
+            {
+              diferentes = true
+              break
+            }
+        }
+        if(!diferentes)
+          {
+            puntajeFinal += 20
+          }
+    }
+    return puntajeFinal
 }
