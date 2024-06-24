@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESTADOS UNIDOS de AMÉRICA</title>
     <link rel="stylesheet" href="../CSS/estadosUnidos.css" />
-    <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
   <body>
     <header>
       <div class="header-section-1">
-        <img src="../IMAGEN/SEARCH.png" alt="" class="search-icon" />
-        <img src="../IMAGEN/MENU.webp" alt="" class="menu-icon" />
+        <img
+          src="../IMAGEN/SEARCH.png"
+          alt=""
+          class="search-icon"
+          id="search-button"
+        />
+        <img
+          src="../IMAGEN/MENU.webp"
+          alt=""
+          class="header-menu-image menu-icon"
+          id="header-menu-img"
+        />
+          <nav class="header-nav desaparecer" id="nav">
+            <img
+              src="https://icon-library.com/images/x-icon-png/x-icon-png-27.jpg"
+              alt="X"
+              class="nav-image"
+              id="nav-button"
+            />
+            <ul class="nav-list">
+              <li><a href="#section1">DESCRIPCIÓN del PAÍS</a></li>
+              <li><a href="#section2">5 LUGARES para IR de VACACIONES en U.S.A.</a></li>
+              <li><a href="#section3">DATOS CURIOSOS</a></li>
+              <li><a href="#section4">QUIZ</a></li>
+            </ul>
+          </nav>
       </div>
       <div class="header-section-2">
         <img src="" alt="" />
@@ -19,7 +43,7 @@
       </div>
     </header>
     <main>
-      <section class="section-1">
+      <section class="section-1" id="section1"> 
         <h1 class="titulo-seccion">Descripción del País:</h1>
         <div class="main-section-1">
           <img src="../IMAGEN/Estatua-libertad.jpg" alt="" />
@@ -37,7 +61,7 @@
           </p>
         </div>
       </section>
-      <section class="section-2">
+      <section class="section-2" id="section2">
         <h2 class="titulo-seccion">
           5 LUGARES PARA IR DE VACACIONES EN U.S.A.
         </h2>
@@ -101,7 +125,7 @@
           </div>
         </div>
       </section>
-      <section class="main-section-3">
+      <section class="main-section-3" id="section3">
         <h2 class="titulo-seccion">DATOS CURIOSOS</h2>
         <div class="main-section-2">
           <div class="main-section-2-containers">
@@ -143,7 +167,7 @@
           </div>
         </div>
       </section>
-      <section class="main-section-4">
+      <section class="main-section-4" id="section4">
         <h2 class="titulo-seccion">QUIZ</h2>
         <div class="portada-quiz" id="quiz-portada">
           <h3>¡PRUEBA TUS CONOCIMIENTOS DE U.S.A.!</h3>
@@ -155,13 +179,33 @@
             <div class="mySlides fade">
               <h3 class="quiz-title"></h3>
               <form class="contenedor-preguntas">
-                <input type="radio" id="spring" name="pregunta_1" value="spring" />
+                <input
+                  type="radio"
+                  id="spring"
+                  name="pregunta_1"
+                  value="spring"
+                />
                 <label for="spring" class="pregunta-0"></label><br />
-                <input type="radio" id="summer" name="pregunta_1" value="summer" />
+                <input
+                  type="radio"
+                  id="summer"
+                  name="pregunta_1"
+                  value="summer"
+                />
                 <label for="summer" class="pregunta-0"></label><br />
-                <input type="radio" id="autumn" name="pregunta_1" value="autumn" />
+                <input
+                  type="radio"
+                  id="autumn"
+                  name="pregunta_1"
+                  value="autumn"
+                />
                 <label for="autumn" class="pregunta-0"></label><br />
-                <input type="radio" id="winter" name="pregunta_1" value="winter" />
+                <input
+                  type="radio"
+                  id="winter"
+                  name="pregunta_1"
+                  value="winter"
+                />
                 <label for="winter" class="pregunta-0"></label>
               </form>
             </div>
@@ -169,13 +213,33 @@
             <div class="mySlides fade">
               <h3 class="quiz-title"></h3>
               <form class="contenedor-preguntas">
-                <input type="radio" id="spring" name="pregunta_2" value="spring" />
+                <input
+                  type="radio"
+                  id="spring"
+                  name="pregunta_2"
+                  value="spring"
+                />
                 <label for="spring" class="pregunta-1"></label><br />
-                <input type="radio" id="summer" name="pregunta_2" value="summer" />
+                <input
+                  type="radio"
+                  id="summer"
+                  name="pregunta_2"
+                  value="summer"
+                />
                 <label for="summer" class="pregunta-1"></label><br />
-                <input type="radio" id="autumn" name="pregunta_2" value="autumn" />
+                <input
+                  type="radio"
+                  id="autumn"
+                  name="pregunta_2"
+                  value="autumn"
+                />
                 <label for="autumn" class="pregunta-1"></label><br />
-                <input type="radio" id="winter" name="pregunta_2" value="winter" />
+                <input
+                  type="radio"
+                  id="winter"
+                  name="pregunta_2"
+                  value="winter"
+                />
                 <label for="winter" class="pregunta-1"></label>
               </form>
             </div>
@@ -183,13 +247,33 @@
             <div class="mySlides fade">
               <h3 class="quiz-title"></h3>
               <form class="contenedor-preguntas">
-                <input type="radio" id="spring" name="pregunta_3" value="spring" />
+                <input
+                  type="radio"
+                  id="spring"
+                  name="pregunta_3"
+                  value="spring"
+                />
                 <label for="spring" class="pregunta-2"></label><br />
-                <input type="radio" id="summer" name="pregunta_3" value="summer" />
+                <input
+                  type="radio"
+                  id="summer"
+                  name="pregunta_3"
+                  value="summer"
+                />
                 <label for="summer" class="pregunta-2"></label><br />
-                <input type="radio" id="autumn" name="pregunta_3" value="autumn" />
+                <input
+                  type="radio"
+                  id="autumn"
+                  name="pregunta_3"
+                  value="autumn"
+                />
                 <label for="autumn" class="pregunta-2"></label><br />
-                <input type="radio" id="winter" name="pregunta_3" value="winter" />
+                <input
+                  type="radio"
+                  id="winter"
+                  name="pregunta_3"
+                  value="winter"
+                />
                 <label for="winter" class="pregunta-2"></label>
               </form>
             </div>
@@ -197,13 +281,33 @@
             <div class="mySlides fade">
               <h3 class="quiz-title"></h3>
               <form class="contenedor-preguntas">
-                <input type="radio" id="spring" name="pregunta_4" value="spring" />
+                <input
+                  type="radio"
+                  id="spring"
+                  name="pregunta_4"
+                  value="spring"
+                />
                 <label for="spring" class="pregunta-3"></label><br />
-                <input type="radio" id="summer" name="pregunta_4" value="summer" />
+                <input
+                  type="radio"
+                  id="summer"
+                  name="pregunta_4"
+                  value="summer"
+                />
                 <label for="summer" class="pregunta-3"></label><br />
-                <input type="radio" id="autumn" name="pregunta_4" value="autumn" />
+                <input
+                  type="radio"
+                  id="autumn"
+                  name="pregunta_4"
+                  value="autumn"
+                />
                 <label for="autumn" class="pregunta-3"></label><br />
-                <input type="radio" id="winter" name="pregunta_4" value="winter" />
+                <input
+                  type="radio"
+                  id="winter"
+                  name="pregunta_4"
+                  value="winter"
+                />
                 <label for="winter" class="pregunta-3"></label>
               </form>
             </div>
@@ -211,20 +315,37 @@
             <div class="mySlides fade">
               <h3 class="quiz-title"></h3>
               <form class="contenedor-preguntas">
-                <input type="radio" id="spring" name="pregunta_5" value="spring" />
+                <input
+                  type="radio"
+                  id="spring"
+                  name="pregunta_5"
+                  value="spring"
+                />
                 <label for="spring" class="pregunta-4"></label><br />
-                <input type="radio" id="summer" name="pregunta_5" value="summer" />
+                <input
+                  type="radio"
+                  id="summer"
+                  name="pregunta_5"
+                  value="summer"
+                />
                 <label for="summer" class="pregunta-4"></label><br />
-                <input type="radio" id="autumn" name="pregunta_5" value="autumn" />
+                <input
+                  type="radio"
+                  id="autumn"
+                  name="pregunta_5"
+                  value="autumn"
+                />
                 <label for="autumn" class="pregunta-4"></label><br />
-                <input type="radio" id="winter" name="pregunta_5" value="winter" />
+                <input
+                  type="radio"
+                  id="winter"
+                  name="pregunta_5"
+                  value="winter"
+                />
                 <label for="winter" class="pregunta-4"></label>
               </form>
               <button class="finish-button" id="finishButton">FINALIZAR</button>
             </div>
-
-
-
 
             <!-- Next and previous buttons -->
             <a class="prev" id="prevButton">&#10094;</a>
@@ -250,15 +371,24 @@
               <span class="dot" onclick="currentSlide(1)"></span>
             </div>
           </div>
-          </div>
-          <div class="container desaparecer" id="portada-finalizar">
-            <h1>Gracias por participar.</h1>
-            <p>Tu puntaje fue: <span id="score"></span></p>
-            <h1 class="puntaje">__%</h1>
-            <button id="button-reiniciar">REINICIAR QUIZ</button>
+        </div>
+        <div class="container desaparecer" id="portada-finalizar">
+          <h1>Gracias por participar.</h1>
+          <p>Tu puntaje fue: <span id="score"></span></p>
+          <h1 class="puntaje" id="puntos"></h1>
+          <button id="button-reiniciar">REINICIAR QUIZ</button>
         </div>
       </section>
     </main>
-    <script  type="module" src="../JAVASCRIPT/estadosUnidos.js"></script>
+
+    <footer>
+      <div class="footer-content">
+        <p>Creado por: Santiago Suárez Herreros & Harold Andres Burbano</p>
+        <p>Año de creación: 2024</p>
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+        <p>Bogotá, Colombia</p>
+      </div>
+    </footer>
+    <script type="module" src="../JAVASCRIPT/estadosUnidos.js"></script>
   </body>
 </html>

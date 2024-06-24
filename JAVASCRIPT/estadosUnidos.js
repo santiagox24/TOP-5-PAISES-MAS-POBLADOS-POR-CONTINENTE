@@ -11,8 +11,20 @@ let finishButton = document.getElementById("finishButton");
 let buttonReiniciar = document.getElementById("button-reiniciar")
 let portadaFinalizar = document.getElementById("portada-finalizar")
 let preguntasSeleccionadas = []
+let textoPuntaje = document.getElementById("puntos")
 
+const NAV_BUTTON = document.getElementById("nav-button")
+const NAV = document.getElementById("nav")
+const MENU = document.getElementById("header-menu-img")
 
+MENU.addEventListener("click", ()=>
+{
+    NAV.classList.remove("desaparecer")
+})
+NAV_BUTTON.addEventListener("click", () =>
+{
+    NAV.classList.add("desaparecer")
+})
 
 function logicaReiniciar()
 {
@@ -135,6 +147,8 @@ function finishQuiz() {
     console.log(puntos)
     carruselContenedora.classList.add("desaparecer")
     portadaFinalizar.classList.remove("desaparecer")
+
+    textoPuntaje.textContent = puntos + " % "
   }
 }
 

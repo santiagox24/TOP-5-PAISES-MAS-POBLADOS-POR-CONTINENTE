@@ -14,6 +14,11 @@
   box-sizing: border-box;
 }
 
+html
+{
+  scroll-behavior: smooth;
+}
+
 .header-section-1 {
   background-color: var(--color-fondo-header-1);
   padding: 40px 30px 40px 10px;
@@ -382,4 +387,83 @@ p {
 #button-reiniciar 
 {
   margin-top: 25px;
+}
+
+
+footer {
+  background-color: var(--color-fondo-header-1);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-content p
+{
+  color: white;
+}
+
+.footer-content p, .footer-content a {
+  margin: 5px 0;
+}
+
+.footer-links, .social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links a, .social-media a {
+  margin: 5px 0;
+}
+
+/* Estilos específicos para móviles */
+@media (max-width: 600px) {
+  footer {
+      padding: 15px 5px;
+  }
+  .footer-content {
+      font-size: 14px;
+  }
+}
+
+ul 
+{
+  list-style: none;
+}
+
+.header-menu-image {
+  width: 60px;
+  height: 50px;
+}
+.nav-image {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.header-nav {
+  position: fixed;
+  width: 70%;
+  background-color: var(--secondary-color);
+  border: 2px solid #fff;
+  border-radius: 15px;
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%, -50%);
+  padding: 20px 0;
+  z-index: 5;
+  font-size: 1.6rem;
+}
+.nav-list li {
+  padding: 10px 0 10px 20px;
+  font-weight: 400;
+}
+.nav-list a
+{
+  color: #ffff;
+  text-decoration: none;
+}
+.nav-list li:active {
+  background-color: var(--fourth-color);
 }
