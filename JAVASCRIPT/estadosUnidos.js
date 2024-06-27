@@ -39,6 +39,8 @@ SEARCH.addEventListener("click", () => {
 });
 SEARCH_BUTTON.addEventListener("click", () => {
   SEARCH_CONTAINER.classList.add("desaparecer");
+  resultDiv.classList.add("desaparecer")
+  searchInput.value = ""
 });
 
 function logicaReiniciar() {
@@ -202,6 +204,7 @@ function puntaje(seleccionadas) {
 
 searchButton.addEventListener("click", function () {
   const query = searchInput.value.toLowerCase();
+  resultDiv.classList.remove("desaparecer")
   performSearch(query);
 }); // Agregar evento para cerrar el contenedor de búsqueda
 function performSearch(query) {

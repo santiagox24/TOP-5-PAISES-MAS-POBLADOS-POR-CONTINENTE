@@ -484,7 +484,7 @@ ul {
   border-radius: 15px;
   right: 50%;
   bottom: 0;
-  transform: translate(50%, -5%);
+  transform: translate(50%, -24%);
   padding: 20px 0;
   z-index: 5;
   font-size: 1.6rem;
@@ -510,5 +510,8 @@ ul {
   background-color: white;
   border-radius: 20px;
   width: 90%;
+
+  max-height: 100px;
+  overflow: auto;
 }
 

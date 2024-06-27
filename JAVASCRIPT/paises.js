@@ -1,6 +1,12 @@
 let data = {
-    "Pagina Principal" : "http://example.com/pagina-principal"
-    , "Africa": [
+    "Pagina Principal" : 
+    [
+        {
+            "nombre" : "Pagina Principal" ,
+            "url" : "https://santiagox24.github.io/TOP-5-PAISES-MAS-POBLADOS-POR-CONTINENTE/"
+        }
+    ]
+  , "Africa": [
         {
             "nombre": "Nigeria",
             "url": "http://example.com/nigeria"
@@ -69,7 +75,7 @@ let data = {
     "America": [
         {
             "nombre": "Estados Unidos",
-            "url": "http://example.com/estados_unidos"
+            "url": "https://santiagox24.github.io/TOP-5-PAISES-MAS-POBLADOS-POR-CONTINENTE/HTML/estadosUnidos.html"
         },
         {
             "nombre": "Brasil",
