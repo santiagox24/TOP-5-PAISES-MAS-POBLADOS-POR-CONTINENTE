@@ -410,16 +410,6 @@ footer {
   margin: 5px 0;
 }
 
-/* Estilos específicos para móviles */
-@media (max-width: 600px) {
-  footer {
-    padding: 15px 5px;
-  }
-  .footer-content {
-    font-size: 14px;
-  }
-}
-
 ul {
   list-style: none;
 }
@@ -515,3 +505,31 @@ ul {
   overflow: auto;
 }
 
+footer {
+  padding: 15px 5px;
+}
+.footer-content {
+  font-size: 14px;
+}
+
+/* Estilos específicos para tablet pequeña. */
+@media (min-width: 590px) {
+  .img-decoration
+  {
+    max-width: 501px;
+    height: 376px;
+  }
+
+  .main-section-1, .main-section-2-containers
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-section-2-containers  > h2
+  {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+}
