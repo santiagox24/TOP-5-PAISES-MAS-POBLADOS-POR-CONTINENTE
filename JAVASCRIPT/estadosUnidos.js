@@ -81,7 +81,6 @@ function llenarPreguntas(preguntasSeleccionadas) {
 }
 
 function activarQuiz() {
-  portadaQuiz.className += " desaparecer";
   carruselContenedora.classList.remove("desaparecer");
   slideIndex = 1;
   showSlides(slideIndex);
@@ -154,7 +153,6 @@ function finishQuiz() {
   } else {
     let selecciones = getSelecciones();
     let puntos = puntaje(selecciones);
-    console.log(puntos);
     carruselContenedora.classList.add("desaparecer");
     portadaFinalizar.classList.remove("desaparecer");
 
