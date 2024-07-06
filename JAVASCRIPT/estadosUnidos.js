@@ -81,6 +81,7 @@ function llenarPreguntas(preguntasSeleccionadas) {
 }
 
 function activarQuiz() {
+  portadaQuiz.classList.add("desaparecer")
   carruselContenedora.classList.remove("desaparecer");
   slideIndex = 1;
   showSlides(slideIndex);

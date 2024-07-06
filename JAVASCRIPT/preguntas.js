@@ -122,7 +122,7 @@ let preguntas = [
   },
   {
     enunciado_pregunta:
-      "¿En qué estado se encuentra el Parque Nacional Yellowstone?",
+      "¿En qué estado se encuentra la mayoria de el Parque Nacional Yellowstone?",
     opciones: [
       { textoOpcion: "California", respuestaCorrecta: false },
       { textoOpcion: "Colorado", respuestaCorrecta: false },
