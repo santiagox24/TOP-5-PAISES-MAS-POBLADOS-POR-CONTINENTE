@@ -60,7 +60,6 @@ main
 .contenedor-banderas
 {
     display: flex;
-    padding-top: 30px;
     padding: 40px;
     background-color: var(--primary-color);
     border-radius: 20px;
@@ -73,7 +72,7 @@ main
 
 .contenedor-bandera
 {
-    margin-right: 45px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,8 +82,10 @@ main
 {
     width: 75px;
     height: 45px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     margin-top: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .contenedor-bandera > p
@@ -110,4 +111,45 @@ footer > p
     font-size: 25px;
     color: var(--text-color);
     font-weight: 600;
+}
+
+@media(0px <= width <= 767px)
+{
+    .contenedor-banderas
+    {
+        flex-direction: column;
+    }
+
+    header > h1
+    {
+        font-size: 35px !important;
+    }
+
+    main
+    {
+        padding: 0px;
+        padding-bottom: 60px;
+    }
+
+    .continente
+    {
+        width: 80%;
+    }
+
+    .contenedor-bandera > p
+    {
+        font-size: 35px !important;
+        max-width: max-content;
+    }
+
+    .contenedor-bandera
+    {
+        margin-bottom: 50px;
+    }
+
+    .contenedor-bandera > img
+    {
+        width: 128px;
+        height: 60px !important;
+    }
 }
