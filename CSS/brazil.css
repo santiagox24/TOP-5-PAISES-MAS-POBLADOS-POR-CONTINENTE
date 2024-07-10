@@ -3,9 +3,9 @@
     --secondary-color: #000;
     --terciary-color: #3c3b6e;
     --cuartiary-color: #b22234;
-    --fifth-color: #7c878e;
-    --color-fondo-header-1: #1e4376;
+    --color-fondo-header-1: #009739;
     --color-fondo-header-2: #2a548c;
+    --color-titulo-seccion: #ffcc29;
   }
   
   * {
@@ -69,13 +69,13 @@
   .titulo-seccion {
     font-size: 35px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: var(--color-fondo-header-1);
+    background-color: var(--color-titulo-seccion);
     color: #fff;
     padding: 15px;
   }
   
   .main-section-1 {
-    margin-top: 40px;
+    margin-top: 40px
   }
   
   .main-section-1 > img {
@@ -101,7 +101,7 @@
   }
   
   .main-section-2-containers > h2 {
-    color: var(--color-fondo-header-1);
+    color: var(--color-fondo-header-2);
     font-size: 30px;
   }
   
@@ -217,7 +217,7 @@
   
   /* Estilo general para el contenedor del quiz */
   .portada-quiz {
-    background: linear-gradient(to bottom, #003366 0%, #0077cc 100%);
+    background: linear-gradient(to bottom, #009C3B, #FFDF00, #00A859);
     padding: 20px;
     color: white;
     text-align: center;
@@ -226,17 +226,18 @@
   
   /* Estilo para el botón del quiz */
   .quiz-button {
-    background: linear-gradient(to bottom, #0055cc 0%, #0099ff 100%);
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 25px 10px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #002776;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border: 5px solid white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px 10px;
+  cursor: pointer;
+  border-radius: 20px;
   }
   
   /* Cambio de color al pasar el cursor por el botón */
@@ -252,7 +253,7 @@
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    background: linear-gradient(to right, #74abe2, #5563de); 
+    background: linear-gradient(to right, #00A859, #FFDF00); 
   }
   
   /* Título del Quiz */
@@ -326,7 +327,7 @@
   }
   
   .finish-button {
-    background-color: #4caf50;
+    background-color:#002776 ;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -351,7 +352,7 @@
   
   .container {
     text-align: center;
-    background: linear-gradient(to bottom, #003366 0%, #0077cc 100%);
+    background: linear-gradient(to bottom, #00A859 0%, #FFDF00 100%);
     padding: 20px;
     border-radius: 10px;
     margin-top: 50px;
@@ -367,7 +368,7 @@
     color: whitesmoke;
   }
   .container button {
-    background-color: #4caf50;
+    background-color: #002776;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -688,7 +689,7 @@
   }
   
   
-  @media(min-width : 1365px)
+  @media(min-width : 1200px)
   {
     .main-section-1 > p
     {
