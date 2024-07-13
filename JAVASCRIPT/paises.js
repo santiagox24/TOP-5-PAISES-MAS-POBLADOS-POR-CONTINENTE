@@ -79,11 +79,11 @@ let data = {
         },
         {
             "nombre": "Brasil",
-            "url": "http://example.com/brasil"
+            "url": "https://santiagox24.github.io/TOP-5-PAISES-MAS-POBLADOS-POR-CONTINENTE/HTML/brazil.html"
         },
         {
             "nombre": "México",
-            "url": "http://example.com/mexico"
+            "url": "https://santiagox24.github.io/TOP-5-PAISES-MAS-POBLADOS-POR-CONTINENTE/HTML/mexico.html"
         },
         {
             "nombre": "Colombia",
