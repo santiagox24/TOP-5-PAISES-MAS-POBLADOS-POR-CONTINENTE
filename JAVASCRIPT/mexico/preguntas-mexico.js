@@ -1,5 +1,4 @@
 let preguntas = [
-    [
         {
           "enunciado_pregunta": "¿Cuál es la capital de México?",
           "opciones": [
@@ -270,7 +269,6 @@ let preguntas = [
             { "textoOpcion": "Tijuana", "respuestaCorrecta": false }
           ]
         }
-      ]
       
   ];
   
