@@ -91,7 +91,7 @@ let data = {
         },
         {
             "nombre": "Argentina",
-            "url": "https://santiagox24.github.io/TOP-5-PAISES-MAS-POBLADOS-POR-CONTINENTE/HTML/argentina.html"
+            "url": "../HTML/argentina.html"
         }
     ],
     "Oceania": [
