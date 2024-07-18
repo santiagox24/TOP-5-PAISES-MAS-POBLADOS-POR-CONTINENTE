@@ -31,7 +31,7 @@ let data = {
     "Asia": [
         {
             "nombre": "China",
-            "url": "http://example.com/china"
+            "url": "../HTML/china.html"
         },
         {
             "nombre": "India",
