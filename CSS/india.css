@@ -1,0 +1,764 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --terciary-color: #3c3b6e;
+    --cuartiary-color: #000080;
+    --color-fondo-header-1: #FF9933;
+    --color-fondo-header-2: #2a548c;
+    --color-titulo-seccion: #138808;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .header-section-1 {
+    background-color: var(--color-fondo-header-1);
+    padding: 40px 30px 40px 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  .header-section-1 > .menu-icon {
+    width: 100px;
+    height: 90px;
+  }
+  
+  .header-section-1 > .search-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .header-section-2 {
+    background-color: var(--color-fondo-header-2);
+    padding: 60px 30px 60px 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../IMAGEN/india/waving-flag-india.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-color);
+  }
+  
+  .header-section-2 > h1 {
+    font-size: 60px;
+  }
+  
+  main {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main > section {
+    width: 85%;
+    margin: 40px 0px 40px 0px;
+  }
+  
+  .titulo-seccion {
+    font-size: 35px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: var(--color-titulo-seccion);
+    color: #fff;
+    padding: 15px;
+  }
+  
+  .main-section-1 {
+    margin-top: 40px;
+  }
+  
+  .main-section-1 > img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 35px;
+  }
+  
+  p {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8em;
+  }
+  
+  .main-section-2 {
+    margin-top: 35px;
+  }
+  
+  .main-section-2-containers {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .main-section-2-containers > h2 {
+    color: var(--cuartiary-color);
+    font-size: 30px;
+  }
+  
+  .main-section-2-containers > img {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  
+  .desaparecer {
+    display: none !important;
+  }
+  
+  .portada-quiz {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    max-width: 872px;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  /*.prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }*/
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Estilo general para el contenedor del quiz */
+  .portada-quiz {
+    background: linear-gradient(
+      to bottom,
+      var(--color-fondo-header-1),
+      var(--primary-color),
+      var(--color-titulo-seccion)
+    );
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para el botón del quiz */
+  .quiz-button {
+    border: none;
+    padding: 10px 20px;
+    border: 5px solid white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 25px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: black;
+    background-color: var(--cuartiary-color);
+    border: none;
+    padding: 10px 20px;
+    border: 5px solid white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 25px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  /* Cambio de color al pasar el cursor por el botón */
+  .quiz-button:hover {
+    background: linear-gradient(
+        to bottom,
+        var(--color-fondo-header-1),
+        var(--primary-color),
+        var(--color-titulo-seccion)
+      ) !important;
+  }
+  
+  /* Estilos generales del contenedor */
+  .mySlides {
+    font-family: "Arial", sans-serif;
+    /*max-width: 400px;*/
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: linear-gradient(
+        to bottom,
+        var(--color-fondo-header-1),
+        var(--primary-color),
+        var(--color-titulo-seccion)
+      );
+  }
+  
+  /* Título del Quiz */
+  .quiz-title {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para cada pregunta */
+  .question {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  /* Estilos para las opciones */
+  .option {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contenedor-preguntas {
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+  
+  .option:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Botón para enviar las respuestas */
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4461c2;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #33408d;
+  }
+  
+  /* Estilo para botón de navegación en el quiz */
+  .navigation-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #4461c2;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .navigation-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .finish-button {
+    background-color: #002776;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .finish-button:hover {
+    background-color: #45a049;
+  }
+  
+  .dot-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    text-align: center;
+    background: linear-gradient(
+        to bottom,
+        var(--color-fondo-header-1),
+        var(--primary-color),
+        var(--color-titulo-seccion)
+      );
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  .container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: whitesmoke;
+  }
+  .container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: whitesmoke;
+  }
+  .container button {
+    background-color: #002776;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .container button:hover {
+    background-color: #45a049;
+  }
+  
+  #button-reiniciar {
+    margin-top: 25px;
+  }
+  
+  footer {
+    background-color: var(--color-fondo-header-1);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  .footer-content p {
+    color: white;
+  }
+  
+  .footer-content p,
+  .footer-content a {
+    margin: 5px 0;
+  }
+  
+  .footer-links,
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-links a,
+  .social-media a {
+    margin: 5px 0;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .header-menu-image {
+    width: 60px;
+    height: 50px;
+  }
+  .nav-image {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .header-nav {
+    position: fixed;
+    width: 70%;
+    background-color: var(--secondary-color);
+    border: 2px solid #fff;
+    border-radius: 15px;
+    right: 50%;
+    bottom: 0;
+    transform: translate(50%, -50%);
+    padding: 20px 0;
+    z-index: 5;
+    font-size: 1.6rem;
+  }
+  .nav-list li {
+    padding: 10px 0 10px 20px;
+    font-weight: 400;
+  }
+  .nav-list a {
+    color: #ffff;
+    text-decoration: none;
+  }
+  .nav-list li:active {
+    background-color: var(--fourth-color);
+  }
+  
+  #search-input {
+    padding: 10px; /* Espacio interno */
+    border: 2px solid #ccc; /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 200px; /* Ancho del input */
+    font-size: 16px; /* Tamaño de fuente */
+  }
+  
+  .header-search-contenedora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-search {
+    position: fixed;
+    width: 70%;
+    background-color: var(--secondary-color);
+    border: 2px solid #fff;
+    border-radius: 15px;
+    right: 50%;
+    bottom: 0;
+    transform: translate(50%, -24%);
+    padding: 20px 0;
+    z-index: 5;
+    font-size: 1.6rem;
+  }
+  
+  #searchButton {
+    padding: 10px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 13px;
+  }
+  #searchButton:hover {
+    background-color: #005f5f;
+  } /* Estilos para el resultado */
+  #result {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+  
+    max-height: 100px;
+    overflow: auto;
+  }
+  
+  footer {
+    padding: 15px 5px;
+  }
+  .footer-content {
+    font-size: 14px;
+  }
+  
+  /* Estilos específicos para tablet pequeña. */
+  @media (min-width: 590px) {
+    .img-decoration {
+      max-width: 501px;
+      height: 376px;
+    }
+  
+    .main-section-1,
+    .main-section-2-containers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-section-2-containers > h2 {
+      margin-bottom: 20px;
+      font-size: 40px;
+    }
+  
+    #quiz-portada {
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  
+    #button-quiz {
+      width: 300px;
+      height: 80px;
+      font-size: 30px;
+      color: #000;
+    }
+  
+    #quiz-portada > h3 {
+      font-size: 45px;
+      color: #000;
+    }
+  
+    .mySlides {
+      height: 440px;
+      padding-bottom: 100px;
+    }
+  
+    .quiz-title {
+      font-size: 35px;
+      margin-bottom: 55px;
+    }
+  
+    .contenedor-preguntas {
+      font-size: 25px;
+    }
+  
+    #finishButton {
+      font-size: 25px;
+      height: 70px;
+      width: 200px;
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  
+    form > input {
+      width: 18px;
+      height: 18px;
+      margin-right: 25px;
+    }
+  
+    .main-section-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .titulo-seccion {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    #header-menu-img {
+      display: none;
+    }
+  
+    .header-nav #nav-button {
+      display: none !important;
+    }
+  
+    .header-nav {
+      display: block !important;
+      justify-content: space-evenly;
+      position: static;
+      background-color: var(--color-prueba);
+      border: none;
+      border-radius: 0;
+      transform: translate(0%, 0%);
+      padding: 20px 0;
+      font-size: 2rem;
+    }
+  
+    .nav-list {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    .header-section-1 {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .header-search {
+      width: 600px;
+    }
+  
+    .header-search #search-input {
+      width: 400px;
+      height: 50px;
+      font-size: 20px;
+    }
+  
+    .header-search #searchButton {
+      width: 160px;
+      height: 60px;
+    }
+  
+    .main-section-1 {
+      max-width: 1200px;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .main-section-1 > img {
+      min-width: 501px;
+      height: 400px;
+      margin-right: 30px;
+    }
+  
+    .section-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .section-1 > h1 {
+      font-size: 55px;
+    }
+  
+    section > .titulo-seccion {
+      font-size: 55px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .main-section-1 > p {
+      font-size: 20px;
+    }
+  
+    #section2 img {
+      min-width: 1002px !important;
+      height: 752px !important;
+    }
+  
+    .main-section-2-containers > h2 {
+      font-size: 45px;
+    }
+  
+    .main-section-2-containers > p {
+      font-size: 20px;
+      max-width: 1100px;
+    }
+  
+    #section3 img {
+      min-width: 1002px !important;
+      height: 752px !important;
+    }
+  
+    #portada-finalizar {
+      width: 788px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(
+        to bottom,
+        var(--color-fondo-header-1),
+        var(--primary-color),
+        var(--color-titulo-seccion)
+      );
+    }
+  
+    #portada-finalizar > h1 {
+      font-size: 40px;
+      color: #000;
+    }
+  
+    #portada-finalizar > p {
+      font-size: 22px;
+      color: #000;
+    }
+  
+    #portada-finalizar > button {
+      font-size: 30px;
+      background: linear-gradient(
+        to bottom,
+        var(--color-fondo-header-1),
+        var(--primary-color),
+        var(--color-titulo-seccion)
+      );
+        color: #000;
+    }
+  
+    .footer-content {
+      font-size: 20px;
+    }
+  }
+  

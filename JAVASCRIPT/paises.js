@@ -35,7 +35,7 @@ let data = {
         },
         {
             "nombre": "India",
-            "url": "http://example.com/india"
+            "url": "../HTML/india.html"
         },
         {
             "nombre": "Indonesia",
