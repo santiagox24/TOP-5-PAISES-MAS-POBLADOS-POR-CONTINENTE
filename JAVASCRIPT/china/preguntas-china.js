@@ -1,275 +1,276 @@
 let preguntas = [
-    {
-      "enunciado_pregunta": "¿Cuál es la capital de la India?",
-      "opciones": [
-        { "textoOpcion": "Mumbai", "respuestaCorrecta": false },
-        { "textoOpcion": "Nueva Delhi", "respuestaCorrecta": true },
-        { "textoOpcion": "Bangalore", "respuestaCorrecta": false },
-        { "textoOpcion": "Chennai", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el río más largo de la India?",
-      "opciones": [
-        { "textoOpcion": "Ganges", "respuestaCorrecta": false },
-        { "textoOpcion": "Yamuna", "respuestaCorrecta": false },
-        { "textoOpcion": "Brahmaputra", "respuestaCorrecta": false },
-        { "textoOpcion": "Indo", "respuestaCorrecta": true }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿En qué año obtuvo la India su independencia?",
-      "opciones": [
-        { "textoOpcion": "1945", "respuestaCorrecta": false },
-        { "textoOpcion": "1947", "respuestaCorrecta": true },
-        { "textoOpcion": "1950", "respuestaCorrecta": false },
-        { "textoOpcion": "1952", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el idioma más hablado en la India?",
-      "opciones": [
-        { "textoOpcion": "Inglés", "respuestaCorrecta": false },
-        { "textoOpcion": "Hindi", "respuestaCorrecta": true },
-        { "textoOpcion": "Bengalí", "respuestaCorrecta": false },
-        { "textoOpcion": "Tamil", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el deporte nacional de la India?",
-      "opciones": [
-        { "textoOpcion": "Fútbol", "respuestaCorrecta": false },
-        { "textoOpcion": "Críquet", "respuestaCorrecta": false },
-        { "textoOpcion": "Hockey sobre césped", "respuestaCorrecta": true },
-        { "textoOpcion": "Kabaddi", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el monumento más famoso de la India?",
-      "opciones": [
-        { "textoOpcion": "Taj Mahal", "respuestaCorrecta": true },
-        { "textoOpcion": "Qutub Minar", "respuestaCorrecta": false },
-        { "textoOpcion": "Fuerte Rojo", "respuestaCorrecta": false },
-        { "textoOpcion": "Puerta de la India", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es la religión mayoritaria en la India?",
-      "opciones": [
-        { "textoOpcion": "Islam", "respuestaCorrecta": false },
-        { "textoOpcion": "Cristianismo", "respuestaCorrecta": false },
-        { "textoOpcion": "Hinduismo", "respuestaCorrecta": true },
-        { "textoOpcion": "Sijismo", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Quién es conocido como el 'Padre de la Nación' en India?",
-      "opciones": [
-        { "textoOpcion": "Jawaharlal Nehru", "respuestaCorrecta": false },
-        { "textoOpcion": "Bhagat Singh", "respuestaCorrecta": false },
-        { "textoOpcion": "Mahatma Gandhi", "respuestaCorrecta": true },
-        { "textoOpcion": "Subhas Chandra Bose", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el estado más grande de la India por área?",
-      "opciones": [
-        { "textoOpcion": "Uttar Pradesh", "respuestaCorrecta": false },
-        { "textoOpcion": "Madhya Pradesh", "respuestaCorrecta": false },
-        { "textoOpcion": "Rajasthan", "respuestaCorrecta": true },
-        { "textoOpcion": "Maharashtra", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el festival de luces en India?",
-      "opciones": [
-        { "textoOpcion": "Holi", "respuestaCorrecta": false },
-        { "textoOpcion": "Diwali", "respuestaCorrecta": true },
-        { "textoOpcion": "Navratri", "respuestaCorrecta": false },
-        { "textoOpcion": "Pongal", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el animal nacional de la India?",
-      "opciones": [
-        { "textoOpcion": "León", "respuestaCorrecta": false },
-        { "textoOpcion": "Tigre", "respuestaCorrecta": true },
-        { "textoOpcion": "Elefante", "respuestaCorrecta": false },
-        { "textoOpcion": "Pavo real", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el sistema de gobierno en la India?",
-      "opciones": [
-        { "textoOpcion": "Monarquía", "respuestaCorrecta": false },
-        { "textoOpcion": "República Federal Parlamentaria", "respuestaCorrecta": true },
-        { "textoOpcion": "República Presidencialista", "respuestaCorrecta": false },
-        { "textoOpcion": "Dictadura", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿En qué estado se encuentra el Taj Mahal?",
-      "opciones": [
-        { "textoOpcion": "Rajasthan", "respuestaCorrecta": false },
-        { "textoOpcion": "Maharashtra", "respuestaCorrecta": false },
-        { "textoOpcion": "Uttar Pradesh", "respuestaCorrecta": true },
-        { "textoOpcion": "Madhya Pradesh", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es la moneda de la India?",
-      "opciones": [
-        { "textoOpcion": "Rupia", "respuestaCorrecta": true },
-        { "textoOpcion": "Dólar", "respuestaCorrecta": false },
-        { "textoOpcion": "Euro", "respuestaCorrecta": false },
-        { "textoOpcion": "Yen", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es la montaña más alta de la India?",
-      "opciones": [
-        { "textoOpcion": "K2", "respuestaCorrecta": true },
-        { "textoOpcion": "Kangchenjunga", "respuestaCorrecta": false },
-        { "textoOpcion": "Nanda Devi", "respuestaCorrecta": false },
-        { "textoOpcion": "Makalu", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el primer ministro actual de la India (a julio de 2024)?",
-      "opciones": [
-        { "textoOpcion": "Narendra Modi", "respuestaCorrecta": true },
-        { "textoOpcion": "Rahul Gandhi", "respuestaCorrecta": false },
-        { "textoOpcion": "Manmohan Singh", "respuestaCorrecta": false },
-        { "textoOpcion": "Amit Shah", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es la danza clásica de Tamil Nadu?",
-      "opciones": [
-        { "textoOpcion": "Kathak", "respuestaCorrecta": false },
-        { "textoOpcion": "Odissi", "respuestaCorrecta": false },
-        { "textoOpcion": "Bharatanatyam", "respuestaCorrecta": true },
-        { "textoOpcion": "Manipuri", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el estado más poblado de la India?",
-      "opciones": [
-        { "textoOpcion": "Bihar", "respuestaCorrecta": false },
-        { "textoOpcion": "Maharashtra", "respuestaCorrecta": false },
-        { "textoOpcion": "Uttar Pradesh", "respuestaCorrecta": true },
-        { "textoOpcion": "Andhra Pradesh", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el mar que bordea la costa oeste de la India?",
-      "opciones": [
-        { "textoOpcion": "Mar de Arabia", "respuestaCorrecta": true },
-        { "textoOpcion": "Mar de China Meridional", "respuestaCorrecta": false },
-        { "textoOpcion": "Mar Rojo", "respuestaCorrecta": false },
-        { "textoOpcion": "Mar Caspio", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es la ciudad conocida como el 'Silicon Valley de India'?",
-      "opciones": [
-        { "textoOpcion": "Hyderabad", "respuestaCorrecta": false },
-        { "textoOpcion": "Chennai", "respuestaCorrecta": false },
-        { "textoOpcion": "Bangalore", "respuestaCorrecta": true },
-        { "textoOpcion": "Pune", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el principal cultivo de la región del Punjab?",
-      "opciones": [
-        { "textoOpcion": "Arroz", "respuestaCorrecta": false },
-        { "textoOpcion": "Trigo", "respuestaCorrecta": true },
-        { "textoOpcion": "Algodón", "respuestaCorrecta": false },
-        { "textoOpcion": "Té", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué líder político es conocido por su papel en la independencia de India?",
-      "opciones": [
-        { "textoOpcion": "Jawaharlal Nehru", "respuestaCorrecta": true },
-        { "textoOpcion": "Indira Gandhi", "respuestaCorrecta": false },
-        { "textoOpcion": "Rajiv Gandhi", "respuestaCorrecta": false },
-        { "textoOpcion": "Sardar Patel", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué país limita con la India al norte?",
-      "opciones": [
-        { "textoOpcion": "Bangladesh", "respuestaCorrecta": false },
-        { "textoOpcion": "China", "respuestaCorrecta": true },
-        { "textoOpcion": "Sri Lanka", "respuestaCorrecta": false },
-        { "textoOpcion": "Nepal", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué es el Rashtrapati Bhavan?",
-      "opciones": [
-        { "textoOpcion": "La residencia del presidente de la India", "respuestaCorrecta": true },
-        { "textoOpcion": "El parlamento de la India", "respuestaCorrecta": false },
-        { "textoOpcion": "El palacio del primer ministro", "respuestaCorrecta": false },
-        { "textoOpcion": "Una famosa universidad en la India", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué océano bordea la India al sur?",
-      "opciones": [
-        { "textoOpcion": "Océano Atlántico", "respuestaCorrecta": false },
-        { "textoOpcion": "Océano Pacífico", "respuestaCorrecta": false },
-        { "textoOpcion": "Océano Índico", "respuestaCorrecta": true },
-        { "textoOpcion": "Océano Ártico", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el principal ingrediente del plato 'Biryani'?",
-      "opciones": [
-        { "textoOpcion": "Pollo", "respuestaCorrecta": false },
-        { "textoOpcion": "Lentejas", "respuestaCorrecta": false },
-        { "textoOpcion": "Arroz", "respuestaCorrecta": true },
-        { "textoOpcion": "Trigo", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué famoso líder espiritual nació en la India?",
-      "opciones": [
-        { "textoOpcion": "Dalai Lama", "respuestaCorrecta": false },
-        { "textoOpcion": "Buda", "respuestaCorrecta": true },
-        { "textoOpcion": "Confucio", "respuestaCorrecta": false },
-        { "textoOpcion": "Lao Tse", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el símbolo nacional de la India?",
-      "opciones": [
-        { "textoOpcion": "El león de Sarnath", "respuestaCorrecta": true },
-        { "textoOpcion": "El elefante", "respuestaCorrecta": false },
-        { "textoOpcion": "El tigre de Bengala", "respuestaCorrecta": false },
-        { "textoOpcion": "El pavo real", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es la universidad más antigua de la India?",
-      "opciones": [
-        { "textoOpcion": "Universidad de Delhi", "respuestaCorrecta": false },
-        { "textoOpcion": "Universidad de Calcuta", "respuestaCorrecta": false },
-        { "textoOpcion": "Nalanda", "respuestaCorrecta": true },
-        { "textoOpcion": "Universidad de Mumbai", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es la ciudad más poblada de la India?",
-      "opciones": [
-        { "textoOpcion": "Delhi", "respuestaCorrecta": false },
-        { "textoOpcion": "Mumbai", "respuestaCorrecta": true },
-        { "textoOpcion": "Kolkata", "respuestaCorrecta": false },
-        { "textoOpcion": "Chennai", "respuestaCorrecta": false }
-      ]
-    }
-  ]
+  {
+    "enunciado_pregunta": "¿Cuál es la capital de China?",
+    "opciones": [
+      { "textoOpcion": "Shanghái", "respuestaCorrecta": false },
+      { "textoOpcion": "Pekín", "respuestaCorrecta": true },
+      { "textoOpcion": "Hong Kong", "respuestaCorrecta": false },
+      { "textoOpcion": "Guangzhou", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el río más largo de China?",
+    "opciones": [
+      { "textoOpcion": "Río Amarillo", "respuestaCorrecta": false },
+      { "textoOpcion": "Río Yangtsé", "respuestaCorrecta": true },
+      { "textoOpcion": "Río Mekong", "respuestaCorrecta": false },
+      { "textoOpcion": "Río Perla", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el sistema político de China?",
+    "opciones": [
+      { "textoOpcion": "Monarquía", "respuestaCorrecta": false },
+      { "textoOpcion": "República Democrática", "respuestaCorrecta": false },
+      { "textoOpcion": "República Popular", "respuestaCorrecta": true },
+      { "textoOpcion": "Confederación", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el nombre oficial de China?",
+    "opciones": [
+      { "textoOpcion": "República de China", "respuestaCorrecta": false },
+      { "textoOpcion": "República Popular China", "respuestaCorrecta": true },
+      { "textoOpcion": "Imperio de China", "respuestaCorrecta": false },
+      { "textoOpcion": "Estado de China", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué tipo de economía tiene China?",
+    "opciones": [
+      { "textoOpcion": "Economía de mercado", "respuestaCorrecta": false },
+      { "textoOpcion": "Economía mixta", "respuestaCorrecta": true },
+      { "textoOpcion": "Economía centralizada", "respuestaCorrecta": false },
+      { "textoOpcion": "Economía de trueque", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué dinastía es conocida por construir gran parte de la Gran Muralla China?",
+    "opciones": [
+      { "textoOpcion": "Dinastía Ming", "respuestaCorrecta": true },
+      { "textoOpcion": "Dinastía Tang", "respuestaCorrecta": false },
+      { "textoOpcion": "Dinastía Yuan", "respuestaCorrecta": false },
+      { "textoOpcion": "Dinastía Han", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el idioma oficial de China?",
+    "opciones": [
+      { "textoOpcion": "Cantonés", "respuestaCorrecta": false },
+      { "textoOpcion": "Mandarín", "respuestaCorrecta": true },
+      { "textoOpcion": "Shanghainés", "respuestaCorrecta": false },
+      { "textoOpcion": "Tibetano", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es la moneda oficial de China?",
+    "opciones": [
+      { "textoOpcion": "Yuan", "respuestaCorrecta": true },
+      { "textoOpcion": "Won", "respuestaCorrecta": false },
+      { "textoOpcion": "Rupia", "respuestaCorrecta": false },
+      { "textoOpcion": "Yen", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es la montaña más alta de China?",
+    "opciones": [
+      { "textoOpcion": "Monte Tai", "respuestaCorrecta": false },
+      { "textoOpcion": "Monte Hua", "respuestaCorrecta": false },
+      { "textoOpcion": "Monte Everest", "respuestaCorrecta": true },
+      { "textoOpcion": "Monte Emei", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿En qué año se fundó la República Popular China?",
+    "opciones": [
+      { "textoOpcion": "1945", "respuestaCorrecta": false },
+      { "textoOpcion": "1949", "respuestaCorrecta": true },
+      { "textoOpcion": "1952", "respuestaCorrecta": false },
+      { "textoOpcion": "1937", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Quién fue el primer presidente de la República Popular China?",
+    "opciones": [
+      { "textoOpcion": "Mao Zedong", "respuestaCorrecta": true },
+      { "textoOpcion": "Deng Xiaoping", "respuestaCorrecta": false },
+      { "textoOpcion": "Sun Yat-sen", "respuestaCorrecta": false },
+      { "textoOpcion": "Chiang Kai-shek", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el festival tradicional más importante en China?",
+    "opciones": [
+      { "textoOpcion": "Festival del Medio Otoño", "respuestaCorrecta": false },
+      { "textoOpcion": "Festival de los Faroles", "respuestaCorrecta": false },
+      { "textoOpcion": "Año Nuevo Chino", "respuestaCorrecta": true },
+      { "textoOpcion": "Festival del Bote del Dragón", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el principal recurso agrícola de China?",
+    "opciones": [
+      { "textoOpcion": "Maíz", "respuestaCorrecta": false },
+      { "textoOpcion": "Trigo", "respuestaCorrecta": false },
+      { "textoOpcion": "Arroz", "respuestaCorrecta": true },
+      { "textoOpcion": "Soja", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el nombre del desierto más grande de China?",
+    "opciones": [
+      { "textoOpcion": "Desierto de Gobi", "respuestaCorrecta": true },
+      { "textoOpcion": "Desierto del Sahara", "respuestaCorrecta": false },
+      { "textoOpcion": "Desierto de Thar", "respuestaCorrecta": false },
+      { "textoOpcion": "Desierto de Sonora", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué animal es considerado un símbolo de China?",
+    "opciones": [
+      { "textoOpcion": "Dragón", "respuestaCorrecta": true },
+      { "textoOpcion": "Tigre", "respuestaCorrecta": false },
+      { "textoOpcion": "León", "respuestaCorrecta": false },
+      { "textoOpcion": "Fénix", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué sistema filosófico/religioso es originario de China?",
+    "opciones": [
+      { "textoOpcion": "Budismo", "respuestaCorrecta": false },
+      { "textoOpcion": "Confucianismo", "respuestaCorrecta": true },
+      { "textoOpcion": "Islam", "respuestaCorrecta": false },
+      { "textoOpcion": "Cristianismo", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el plato más famoso de la gastronomía china?",
+    "opciones": [
+      { "textoOpcion": "Sushi", "respuestaCorrecta": false },
+      { "textoOpcion": "Pato a la pekinesa", "respuestaCorrecta": true },
+      { "textoOpcion": "Tempura", "respuestaCorrecta": false },
+      { "textoOpcion": "Pho", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es la ciudad más poblada de China?",
+    "opciones": [
+      { "textoOpcion": "Pekín", "respuestaCorrecta": false },
+      { "textoOpcion": "Shanghái", "respuestaCorrecta": true },
+      { "textoOpcion": "Guangzhou", "respuestaCorrecta": false },
+      { "textoOpcion": "Shenzhen", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el nombre del famoso guerrero que unificó China?",
+    "opciones": [
+      { "textoOpcion": "Gengis Kan", "respuestaCorrecta": false },
+      { "textoOpcion": "Qin Shi Huang", "respuestaCorrecta": true },
+      { "textoOpcion": "Kublai Kan", "respuestaCorrecta": false },
+      { "textoOpcion": "Sun Tzu", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué isla es considerada una provincia de China, pero se gobierna de manera independiente?",
+    "opciones": [
+      { "textoOpcion": "Hong Kong", "respuestaCorrecta": false },
+      { "textoOpcion": "Taiwán", "respuestaCorrecta": true },
+      { "textoOpcion": "Macao", "respuestaCorrecta": false },
+      { "textoOpcion": "Hainan", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué es el sistema de escritura chino?",
+    "opciones": [
+      { "textoOpcion": "Alfabeto", "respuestaCorrecta": false },
+      { "textoOpcion": "Ideogramas", "respuestaCorrecta": true },
+      { "textoOpcion": "Sílaba", "respuestaCorrecta": false },
+      { "textoOpcion": "Runas", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué característica arquitectónica es icónica en los templos chinos?",
+    "opciones": [
+      { "textoOpcion": "Cúpula", "respuestaCorrecta": false },
+      { "textoOpcion": "Pagoda", "respuestaCorrecta": true },
+      { "textoOpcion": "Minarete", "respuestaCorrecta": false },
+      { "textoOpcion": "Ábside", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué conflicto bélico enfrentó China contra el Reino Unido en el siglo XIX?",
+    "opciones": [
+      { "textoOpcion": "Guerra de los Cien Años", "respuestaCorrecta": false },
+      { "textoOpcion": "Guerra del Opio", "respuestaCorrecta": true },
+      { "textoOpcion": "Guerra de Crimea", "respuestaCorrecta": false },
+      { "textoOpcion": "Guerra de la Independencia", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es la región autónoma en el noroeste de China, habitada principalmente por musulmanes uigures?",
+    "opciones": [
+      { "textoOpcion": "Tíbet", "respuestaCorrecta": false },
+      { "textoOpcion": "Xinjiang", "respuestaCorrecta": true },
+      { "textoOpcion": "Guangxi", "respuestaCorrecta": false },
+      { "textoOpcion": "Mongolia Interior", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el deporte más popular en China?",
+    "opciones": [
+      { "textoOpcion": "Béisbol", "respuestaCorrecta": false },
+      { "textoOpcion": "Fútbol", "respuestaCorrecta": false },
+      { "textoOpcion": "Baloncesto", "respuestaCorrecta": true },
+      { "textoOpcion": "Tenis", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el animal que se celebra en el horóscopo chino en 2024?",
+    "opciones": [
+      { "textoOpcion": "Rata", "respuestaCorrecta": false },
+      { "textoOpcion": "Dragón", "respuestaCorrecta": false },
+      { "textoOpcion": "Mono", "respuestaCorrecta": false },
+      { "textoOpcion": "Dragón", "respuestaCorrecta": true }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué es el 'cinturón y ruta de la seda'?",
+    "opciones": [
+      { "textoOpcion": "Un proyecto de infraestructura global liderado por China", "respuestaCorrecta": true },
+      { "textoOpcion": "Una antigua ruta comercial en Asia", "respuestaCorrecta": false },
+      { "textoOpcion": "Un programa de asistencia económica de la ONU", "respuestaCorrecta": false },
+      { "textoOpcion": "Una alianza militar en Asia", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es la ciudad china famosa por sus guerreros de terracota?",
+    "opciones": [
+      { "textoOpcion": "Xiamen", "respuestaCorrecta": false },
+      { "textoOpcion": "Xi'an", "respuestaCorrecta": true },
+      { "textoOpcion": "Chengdu", "respuestaCorrecta": false },
+      { "textoOpcion": "Kunming", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué política china limitaba el número de hijos por familia?",
+    "opciones": [
+      { "textoOpcion": "Política de dos hijos", "respuestaCorrecta": false },
+      { "textoOpcion": "Política de un hijo", "respuestaCorrecta": true },
+      { "textoOpcion": "Política de control de la natalidad", "respuestaCorrecta": false },
+      { "textoOpcion": "Política de familia", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿En qué año Beijing fue sede de los Juegos Olímpicos de verano?",
+    "opciones": [
+      { "textoOpcion": "2000", "respuestaCorrecta": false },
+      { "textoOpcion": "2008", "respuestaCorrecta": true },
+      { "textoOpcion": "2012", "respuestaCorrecta": false },
+      { "textoOpcion": "2016", "respuestaCorrecta": false }
+    ]
+  }
+]
+
   
   
 

@@ -217,12 +217,7 @@
   
   /* Estilo general para el contenedor del quiz */
   .portada-quiz {
-    background: linear-gradient(
-      to bottom,
-      var(--color-fondo-header-1),
-      var(--primary-color),
-      var(--color-titulo-seccion)
-    );
+    background-color: var(--color-fondo-header-1);
     padding: 20px;
     color: white;
     text-align: center;
@@ -231,6 +226,7 @@
   
   /* Estilo para el botón del quiz */
   .quiz-button {
+    background-color: var(--color-titulo-seccion);
     border: none;
     padding: 10px 20px;
     border: 5px solid white;
@@ -258,12 +254,8 @@
   
   /* Cambio de color al pasar el cursor por el botón */
   .quiz-button:hover {
-    background: linear-gradient(
-        to bottom,
-        var(--color-fondo-header-1),
-        var(--primary-color),
-        var(--color-titulo-seccion)
-      ) !important;
+    background-color: var(--color-titulo-seccion)
+       !important;
   }
   
   /* Estilos generales del contenedor */
@@ -274,12 +266,8 @@
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    background: linear-gradient(
-        to bottom,
-        var(--color-fondo-header-1),
-        var(--primary-color),
-        var(--color-titulo-seccion)
-      );
+    background-color: var(--color-fondo-header-1)
+      ;
   }
   
   /* Título del Quiz */
@@ -378,12 +366,8 @@
   
   .container {
     text-align: center;
-    background: linear-gradient(
-        to bottom,
-        var(--color-fondo-header-1),
-        var(--primary-color),
-        var(--color-titulo-seccion)
-      );
+    background-color: var(--color-fondo-header-1)
+      ;
     padding: 20px;
     border-radius: 10px;
     margin-top: 50px;
@@ -577,11 +561,12 @@
       height: 80px;
       font-size: 30px;
       color: #000;
+      background-color: var(--color-titulo-seccion);
     }
   
     #quiz-portada > h3 {
       font-size: 45px;
-      color: #000;
+      color: black;
     }
   
     .mySlides {
@@ -728,12 +713,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(
-        to bottom,
-        var(--color-fondo-header-1),
-        var(--primary-color),
-        var(--color-titulo-seccion)
-      );
+      background-color: var(--color-fondo-header-1);
     }
   
     #portada-finalizar > h1 {
@@ -743,18 +723,14 @@
   
     #portada-finalizar > p {
       font-size: 22px;
-      color: #000;
+      color: var(--primary-color);
     }
   
     #portada-finalizar > button {
       font-size: 30px;
-      background: linear-gradient(
-        to bottom,
-        var(--color-fondo-header-1),
-        var(--primary-color),
-        var(--color-titulo-seccion)
-      );
-        color: #000;
+      background-color: var(--color-titulo-seccion);
+      color: var(--secondary-color);
+      ;
     }
   
     .footer-content {
