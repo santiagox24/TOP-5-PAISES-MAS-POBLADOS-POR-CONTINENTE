@@ -5,7 +5,7 @@
     --cuartiary-color: #FF0000;
     --color-fondo-header-1: #FF0000;
     --color-fondo-header-2: #2a548c;
-    --color-titulo-seccion: #FFFF00;
+    --color-titulo-seccion: #FF0000;
   }
   
   * {
@@ -42,7 +42,7 @@
     background-color: var(--color-fondo-header-2);
     padding: 60px 30px 60px 30px;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("../IMAGEN/china/waving-india-flag.jpg");
+      url("../IMAGEN/indonesia/indonesia-waving-flag.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -217,7 +217,11 @@
   
   /* Estilo general para el contenedor del quiz */
   .portada-quiz {
-    background-color: var(--color-fondo-header-1);
+    background: linear-gradient(
+        to bottom,
+        var(--color-fondo-header-1),
+        whitesmoke
+      );
     padding: 20px;
     color: white;
     text-align: center;
@@ -226,7 +230,11 @@
   
   /* Estilo para el botón del quiz */
   .quiz-button {
-    background-color: var(--color-titulo-seccion);
+    background: linear-gradient(
+        to bottom,
+        var(--color-fondo-header-1),
+        whitesmoke
+      );
     border: none;
     padding: 10px 20px;
     border: 5px solid white;
@@ -238,7 +246,6 @@
     cursor: pointer;
     border-radius: 20px;
     color: black;
-    background-color: var(--cuartiary-color);
     border: none;
     padding: 10px 20px;
     border: 5px solid white;
@@ -254,8 +261,11 @@
   
   /* Cambio de color al pasar el cursor por el botón */
   .quiz-button:hover {
-    background-color: var(--color-titulo-seccion)
-       !important;
+    background: linear-gradient(
+        to bottom,
+        var(--color-fondo-header-1),
+        whitesmoke
+      )        !important;
   }
   
   /* Estilos generales del contenedor */
@@ -266,8 +276,11 @@
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    background-color: var(--color-fondo-header-1)
-      ;
+    background: linear-gradient(
+        to bottom,
+        var(--color-fondo-header-1),
+        whitesmoke
+      );
   }
   
   /* Título del Quiz */
@@ -561,7 +574,6 @@
       height: 80px;
       font-size: 30px;
       color: #000;
-      background-color: var(--color-titulo-seccion);
     }
   
     #quiz-portada > h3 {
@@ -713,7 +725,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: var(--color-fondo-header-1);
+      background: linear-gradient(
+        to bottom,
+        var(--color-fondo-header-1),
+        whitesmoke
+      );
     }
   
     #portada-finalizar > h1 {

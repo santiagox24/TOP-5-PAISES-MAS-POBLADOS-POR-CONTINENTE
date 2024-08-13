@@ -1,274 +1,275 @@
 let preguntas = [
-    {
-      "enunciado_pregunta": "¿Cuál es la capital de China?",
-      "opciones": [
-        { "textoOpcion": "Shanghái", "respuestaCorrecta": false },
-        { "textoOpcion": "Pekín", "respuestaCorrecta": true },
-        { "textoOpcion": "Hong Kong", "respuestaCorrecta": false },
-        { "textoOpcion": "Guangzhou", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el río más largo de China?",
-      "opciones": [
-        { "textoOpcion": "Río Amarillo", "respuestaCorrecta": false },
-        { "textoOpcion": "Río Yangtsé", "respuestaCorrecta": true },
-        { "textoOpcion": "Río Mekong", "respuestaCorrecta": false },
-        { "textoOpcion": "Río Perla", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el sistema político de China?",
-      "opciones": [
-        { "textoOpcion": "Monarquía", "respuestaCorrecta": false },
-        { "textoOpcion": "República Democrática", "respuestaCorrecta": false },
-        { "textoOpcion": "República Popular", "respuestaCorrecta": true },
-        { "textoOpcion": "Confederación", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el nombre oficial de China?",
-      "opciones": [
-        { "textoOpcion": "República de China", "respuestaCorrecta": false },
-        { "textoOpcion": "República Popular China", "respuestaCorrecta": true },
-        { "textoOpcion": "Imperio de China", "respuestaCorrecta": false },
-        { "textoOpcion": "Estado de China", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué tipo de economía tiene China?",
-      "opciones": [
-        { "textoOpcion": "Economía de mercado", "respuestaCorrecta": false },
-        { "textoOpcion": "Economía mixta", "respuestaCorrecta": true },
-        { "textoOpcion": "Economía centralizada", "respuestaCorrecta": false },
-        { "textoOpcion": "Economía de trueque", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué dinastía es conocida por construir gran parte de la Gran Muralla China?",
-      "opciones": [
-        { "textoOpcion": "Dinastía Ming", "respuestaCorrecta": true },
-        { "textoOpcion": "Dinastía Tang", "respuestaCorrecta": false },
-        { "textoOpcion": "Dinastía Yuan", "respuestaCorrecta": false },
-        { "textoOpcion": "Dinastía Han", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el idioma oficial de China?",
-      "opciones": [
-        { "textoOpcion": "Cantonés", "respuestaCorrecta": false },
-        { "textoOpcion": "Mandarín", "respuestaCorrecta": true },
-        { "textoOpcion": "Shanghainés", "respuestaCorrecta": false },
-        { "textoOpcion": "Tibetano", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es la moneda oficial de China?",
-      "opciones": [
-        { "textoOpcion": "Yuan", "respuestaCorrecta": true },
-        { "textoOpcion": "Won", "respuestaCorrecta": false },
-        { "textoOpcion": "Rupia", "respuestaCorrecta": false },
-        { "textoOpcion": "Yen", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es la montaña más alta de China?",
-      "opciones": [
-        { "textoOpcion": "Monte Tai", "respuestaCorrecta": false },
-        { "textoOpcion": "Monte Hua", "respuestaCorrecta": false },
-        { "textoOpcion": "Monte Everest", "respuestaCorrecta": true },
-        { "textoOpcion": "Monte Emei", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿En qué año se fundó la República Popular China?",
-      "opciones": [
-        { "textoOpcion": "1945", "respuestaCorrecta": false },
-        { "textoOpcion": "1949", "respuestaCorrecta": true },
-        { "textoOpcion": "1952", "respuestaCorrecta": false },
-        { "textoOpcion": "1937", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Quién fue el primer presidente de la República Popular China?",
-      "opciones": [
-        { "textoOpcion": "Mao Zedong", "respuestaCorrecta": true },
-        { "textoOpcion": "Deng Xiaoping", "respuestaCorrecta": false },
-        { "textoOpcion": "Sun Yat-sen", "respuestaCorrecta": false },
-        { "textoOpcion": "Chiang Kai-shek", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el festival tradicional más importante en China?",
-      "opciones": [
-        { "textoOpcion": "Festival del Medio Otoño", "respuestaCorrecta": false },
-        { "textoOpcion": "Festival de los Faroles", "respuestaCorrecta": false },
-        { "textoOpcion": "Año Nuevo Chino", "respuestaCorrecta": true },
-        { "textoOpcion": "Festival del Bote del Dragón", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el principal recurso agrícola de China?",
-      "opciones": [
-        { "textoOpcion": "Maíz", "respuestaCorrecta": false },
-        { "textoOpcion": "Trigo", "respuestaCorrecta": false },
-        { "textoOpcion": "Arroz", "respuestaCorrecta": true },
-        { "textoOpcion": "Soja", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el nombre del desierto más grande de China?",
-      "opciones": [
-        { "textoOpcion": "Desierto de Gobi", "respuestaCorrecta": true },
-        { "textoOpcion": "Desierto del Sahara", "respuestaCorrecta": false },
-        { "textoOpcion": "Desierto de Thar", "respuestaCorrecta": false },
-        { "textoOpcion": "Desierto de Sonora", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué animal es considerado un símbolo de China?",
-      "opciones": [
-        { "textoOpcion": "Dragón", "respuestaCorrecta": true },
-        { "textoOpcion": "Tigre", "respuestaCorrecta": false },
-        { "textoOpcion": "León", "respuestaCorrecta": false },
-        { "textoOpcion": "Fénix", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué sistema filosófico/religioso es originario de China?",
-      "opciones": [
-        { "textoOpcion": "Budismo", "respuestaCorrecta": false },
-        { "textoOpcion": "Confucianismo", "respuestaCorrecta": true },
-        { "textoOpcion": "Islam", "respuestaCorrecta": false },
-        { "textoOpcion": "Cristianismo", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el plato más famoso de la gastronomía china?",
-      "opciones": [
-        { "textoOpcion": "Sushi", "respuestaCorrecta": false },
-        { "textoOpcion": "Pato a la pekinesa", "respuestaCorrecta": true },
-        { "textoOpcion": "Tempura", "respuestaCorrecta": false },
-        { "textoOpcion": "Pho", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es la ciudad más poblada de China?",
-      "opciones": [
-        { "textoOpcion": "Pekín", "respuestaCorrecta": false },
-        { "textoOpcion": "Shanghái", "respuestaCorrecta": true },
-        { "textoOpcion": "Guangzhou", "respuestaCorrecta": false },
-        { "textoOpcion": "Shenzhen", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el nombre del famoso guerrero que unificó China?",
-      "opciones": [
-        { "textoOpcion": "Gengis Kan", "respuestaCorrecta": false },
-        { "textoOpcion": "Qin Shi Huang", "respuestaCorrecta": true },
-        { "textoOpcion": "Kublai Kan", "respuestaCorrecta": false },
-        { "textoOpcion": "Sun Tzu", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué isla es considerada una provincia de China, pero se gobierna de manera independiente?",
-      "opciones": [
-        { "textoOpcion": "Hong Kong", "respuestaCorrecta": false },
-        { "textoOpcion": "Taiwán", "respuestaCorrecta": true },
-        { "textoOpcion": "Macao", "respuestaCorrecta": false },
-        { "textoOpcion": "Hainan", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué es el sistema de escritura chino?",
-      "opciones": [
-        { "textoOpcion": "Alfabeto", "respuestaCorrecta": false },
-        { "textoOpcion": "Ideogramas", "respuestaCorrecta": true },
-        { "textoOpcion": "Sílaba", "respuestaCorrecta": false },
-        { "textoOpcion": "Runas", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué característica arquitectónica es icónica en los templos chinos?",
-      "opciones": [
-        { "textoOpcion": "Cúpula", "respuestaCorrecta": false },
-        { "textoOpcion": "Pagoda", "respuestaCorrecta": true },
-        { "textoOpcion": "Minarete", "respuestaCorrecta": false },
-        { "textoOpcion": "Ábside", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué conflicto bélico enfrentó China contra el Reino Unido en el siglo XIX?",
-      "opciones": [
-        { "textoOpcion": "Guerra de los Cien Años", "respuestaCorrecta": false },
-        { "textoOpcion": "Guerra del Opio", "respuestaCorrecta": true },
-        { "textoOpcion": "Guerra de Crimea", "respuestaCorrecta": false },
-        { "textoOpcion": "Guerra de la Independencia", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es la región autónoma en el noroeste de China, habitada principalmente por musulmanes uigures?",
-      "opciones": [
-        { "textoOpcion": "Tíbet", "respuestaCorrecta": false },
-        { "textoOpcion": "Xinjiang", "respuestaCorrecta": true },
-        { "textoOpcion": "Guangxi", "respuestaCorrecta": false },
-        { "textoOpcion": "Mongolia Interior", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el deporte más popular en China?",
-      "opciones": [
-        { "textoOpcion": "Béisbol", "respuestaCorrecta": false },
-        { "textoOpcion": "Fútbol", "respuestaCorrecta": false },
-        { "textoOpcion": "Baloncesto", "respuestaCorrecta": true },
-        { "textoOpcion": "Tenis", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es el animal que se celebra en el horóscopo chino en 2024?",
-      "opciones": [
-        { "textoOpcion": "Rata", "respuestaCorrecta": false },
-        { "textoOpcion": "Dragón", "respuestaCorrecta": false },
-        { "textoOpcion": "Mono", "respuestaCorrecta": false },
-        { "textoOpcion": "Dragón", "respuestaCorrecta": true }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué es el 'cinturón y ruta de la seda'?",
-      "opciones": [
-        { "textoOpcion": "Un proyecto de infraestructura global liderado por China", "respuestaCorrecta": true },
-        { "textoOpcion": "Una antigua ruta comercial en Asia", "respuestaCorrecta": false },
-        { "textoOpcion": "Un programa de asistencia económica de la ONU", "respuestaCorrecta": false },
-        { "textoOpcion": "Una alianza militar en Asia", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Cuál es la ciudad china famosa por sus guerreros de terracota?",
-      "opciones": [
-        { "textoOpcion": "Xiamen", "respuestaCorrecta": false },
-        { "textoOpcion": "Xi'an", "respuestaCorrecta": true },
-        { "textoOpcion": "Chengdu", "respuestaCorrecta": false },
-        { "textoOpcion": "Kunming", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿Qué política china limitaba el número de hijos por familia?",
-      "opciones": [
-        { "textoOpcion": "Política de dos hijos", "respuestaCorrecta": false },
-        { "textoOpcion": "Política de un hijo", "respuestaCorrecta": true },
-        { "textoOpcion": "Política de control de la natalidad", "respuestaCorrecta": false },
-        { "textoOpcion": "Política de familia", "respuestaCorrecta": false }
-      ]
-    },
-    {
-      "enunciado_pregunta": "¿En qué año Beijing fue sede de los Juegos Olímpicos de verano?",
-      "opciones": [
-        { "textoOpcion": "2000", "respuestaCorrecta": false },
-        { "textoOpcion": "2008", "respuestaCorrecta": true },
-        { "textoOpcion": "2012", "respuestaCorrecta": false },
-        { "textoOpcion": "2016", "respuestaCorrecta": false }
-      ]
-    }
+  {
+    "enunciado_pregunta": "¿Cuál es la capital de Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Bandung", "respuestaCorrecta": false },
+      { "textoOpcion": "Surabaya", "respuestaCorrecta": false },
+      { "textoOpcion": "Yakarta", "respuestaCorrecta": true },
+      { "textoOpcion": "Denpasar", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿En qué continente se encuentra Indonesia?",
+    "opciones": [
+      { "textoOpcion": "África", "respuestaCorrecta": false },
+      { "textoOpcion": "Europa", "respuestaCorrecta": false },
+      { "textoOpcion": "Asia", "respuestaCorrecta": true },
+      { "textoOpcion": "América del Sur", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué isla de Indonesia es la más grande?",
+    "opciones": [
+      { "textoOpcion": "Java", "respuestaCorrecta": false },
+      { "textoOpcion": "Sumatra", "respuestaCorrecta": false },
+      { "textoOpcion": "Kalimantan", "respuestaCorrecta": true },
+      { "textoOpcion": "Bali", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el idioma oficial de Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Inglés", "respuestaCorrecta": false },
+      { "textoOpcion": "Javanés", "respuestaCorrecta": false },
+      { "textoOpcion": "Bali", "respuestaCorrecta": false },
+      { "textoOpcion": "Indonesio", "respuestaCorrecta": true }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué religión es mayoritaria en Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Hinduismo", "respuestaCorrecta": false },
+      { "textoOpcion": "Cristianismo", "respuestaCorrecta": false },
+      { "textoOpcion": "Islam", "respuestaCorrecta": true },
+      { "textoOpcion": "Budismo", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es la moneda oficial de Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Rupia india", "respuestaCorrecta": false },
+      { "textoOpcion": "Rupia indonesia", "respuestaCorrecta": true },
+      { "textoOpcion": "Dólar australiano", "respuestaCorrecta": false },
+      { "textoOpcion": "Ringgit malayo", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el volcán más famoso de Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Monte Fuji", "respuestaCorrecta": false },
+      { "textoOpcion": "Krakatoa", "respuestaCorrecta": true },
+      { "textoOpcion": "Etna", "respuestaCorrecta": false },
+      { "textoOpcion": "Vesubio", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué océano rodea a Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Océano Atlántico", "respuestaCorrecta": false },
+      { "textoOpcion": "Océano Pacífico", "respuestaCorrecta": true },
+      { "textoOpcion": "Océano Índico", "respuestaCorrecta": true },
+      { "textoOpcion": "Océano Ártico", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el nombre del templo budista más grande de Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Angkor Wat", "respuestaCorrecta": false },
+      { "textoOpcion": "Borobudur", "respuestaCorrecta": true },
+      { "textoOpcion": "Shwedagon", "respuestaCorrecta": false },
+      { "textoOpcion": "Wat Arun", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el país que comparte la isla de Borneo con Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Tailandia", "respuestaCorrecta": false },
+      { "textoOpcion": "Vietnam", "respuestaCorrecta": false },
+      { "textoOpcion": "Malasia", "respuestaCorrecta": true },
+      { "textoOpcion": "Filipinas", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué isla de Indonesia es conocida por su turismo y cultura hindú?",
+    "opciones": [
+      { "textoOpcion": "Java", "respuestaCorrecta": false },
+      { "textoOpcion": "Sumatra", "respuestaCorrecta": false },
+      { "textoOpcion": "Bali", "respuestaCorrecta": true },
+      { "textoOpcion": "Sulawesi", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el plato típico de Indonesia que consiste en arroz frito?",
+    "opciones": [
+      { "textoOpcion": "Pad Thai", "respuestaCorrecta": false },
+      { "textoOpcion": "Nasi Goreng", "respuestaCorrecta": true },
+      { "textoOpcion": "Biryani", "respuestaCorrecta": false },
+      { "textoOpcion": "Ramen", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué animal es nativo de Indonesia y es conocido por su capacidad de mimetizarse?",
+    "opciones": [
+      { "textoOpcion": "Camaleón", "respuestaCorrecta": false },
+      { "textoOpcion": "Dragón de Komodo", "respuestaCorrecta": true },
+      { "textoOpcion": "Iguana", "respuestaCorrecta": false },
+      { "textoOpcion": "Serpiente pitón", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué archipiélago es parte de Indonesia y está situado en el océano Pacífico?",
+    "opciones": [
+      { "textoOpcion": "Maldivas", "respuestaCorrecta": false },
+      { "textoOpcion": "Hawái", "respuestaCorrecta": false },
+      { "textoOpcion": "Islas Molucas", "respuestaCorrecta": true },
+      { "textoOpcion": "Fiyi", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué color predomina en la bandera de Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Azul", "respuestaCorrecta": false },
+      { "textoOpcion": "Verde", "respuestaCorrecta": false },
+      { "textoOpcion": "Rojo y blanco", "respuestaCorrecta": true },
+      { "textoOpcion": "Amarillo", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el principal recurso natural exportado por Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Petróleo", "respuestaCorrecta": false },
+      { "textoOpcion": "Café", "respuestaCorrecta": false },
+      { "textoOpcion": "Gas natural", "respuestaCorrecta": true },
+      { "textoOpcion": "Oro", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué país se encuentra al norte de Indonesia, separado por el mar de Java?",
+    "opciones": [
+      { "textoOpcion": "Australia", "respuestaCorrecta": false },
+      { "textoOpcion": "Filipinas", "respuestaCorrecta": true },
+      { "textoOpcion": "India", "respuestaCorrecta": false },
+      { "textoOpcion": "Papúa Nueva Guinea", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es la forma de gobierno de Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Monarquía", "respuestaCorrecta": false },
+      { "textoOpcion": "República presidencialista", "respuestaCorrecta": true },
+      { "textoOpcion": "Dictadura", "respuestaCorrecta": false },
+      { "textoOpcion": "Parlamentarismo", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el río más largo de Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Río Amazonas", "respuestaCorrecta": false },
+      { "textoOpcion": "Río Nilo", "respuestaCorrecta": false },
+      { "textoOpcion": "Río Kapuas", "respuestaCorrecta": true },
+      { "textoOpcion": "Río Yangtsé", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué tipo de clima predomina en Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Árido", "respuestaCorrecta": false },
+      { "textoOpcion": "Mediterráneo", "respuestaCorrecta": false },
+      { "textoOpcion": "Tropical", "respuestaCorrecta": true },
+      { "textoOpcion": "Polar", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué mar está al este de la isla de Sumatra en Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Mar de Java", "respuestaCorrecta": true },
+      { "textoOpcion": "Mar de Banda", "respuestaCorrecta": false },
+      { "textoOpcion": "Mar de Arafura", "respuestaCorrecta": false },
+      { "textoOpcion": "Mar de Célebes", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué isla de Indonesia es famosa por sus dragones de Komodo?",
+    "opciones": [
+      { "textoOpcion": "Borneo", "respuestaCorrecta": false },
+      { "textoOpcion": "Komodo", "respuestaCorrecta": true },
+      { "textoOpcion": "Lombok", "respuestaCorrecta": false },
+      { "textoOpcion": "Sumatra", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es la montaña más alta de Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Monte Everest", "respuestaCorrecta": false },
+      { "textoOpcion": "Monte Kilimanjaro", "respuestaCorrecta": false },
+      { "textoOpcion": "Puncak Jaya", "respuestaCorrecta": true },
+      { "textoOpcion": "Monte Fuji", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué ciudad es conocida como la segunda más grande de Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Yakarta", "respuestaCorrecta": false },
+      { "textoOpcion": "Surabaya", "respuestaCorrecta": true },
+      { "textoOpcion": "Bandung", "respuestaCorrecta": false },
+      { "textoOpcion": "Medan", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué isla de Indonesia es la más densamente poblada?",
+    "opciones": [
+      { "textoOpcion": "Sumatra", "respuestaCorrecta": false },
+      { "textoOpcion": "Bali", "respuestaCorrecta": false },
+      { "textoOpcion": "Java", "respuestaCorrecta": true },
+      { "textoOpcion": "Sulawesi", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué país colonizó Indonesia hasta su independencia en 1945?",
+    "opciones": [
+      { "textoOpcion": "Reino Unido", "respuestaCorrecta": false },
+      { "textoOpcion": "España", "respuestaCorrecta": false },
+      { "textoOpcion": "Países Bajos", "respuestaCorrecta": true },
+      { "textoOpcion": "Francia", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué festival es famoso en la isla de Bali y marca el Año Nuevo balinés?",
+    "opciones": [
+      { "textoOpcion": "Diwali", "respuestaCorrecta": false },
+      { "textoOpcion": "Nyepi", "respuestaCorrecta": true },
+      { "textoOpcion": "Songkran", "respuestaCorrecta": false },
+      { "textoOpcion": "Lunar New Year", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Cuál es el aeropuerto internacional más grande de Indonesia?",
+    "opciones": [
+      { "textoOpcion": "Aeropuerto de Bali", "respuestaCorrecta": false },
+      { "textoOpcion": "Aeropuerto de Surabaya", "respuestaCorrecta": false },
+      { "textoOpcion": "Aeropuerto Soekarno-Hatta", "respuestaCorrecta": true },
+      { "textoOpcion": "Aeropuerto de Yogyakarta", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué es el 'Batik' en la cultura indonesia?",
+    "opciones": [
+      { "textoOpcion": "Un tipo de comida", "respuestaCorrecta": false },
+      { "textoOpcion": "Una danza tradicional", "respuestaCorrecta": false },
+      { "textoOpcion": "Un estilo de tejido", "respuestaCorrecta": true },
+      { "textoOpcion": "Una ceremonia religiosa", "respuestaCorrecta": false }
+    ]
+  },
+  {
+    "enunciado_pregunta": "¿Qué presidente proclamó la independencia de Indonesia en 1945?",
+    "opciones": [
+      { "textoOpcion": "Suharto", "respuestaCorrecta": false },
+      { "textoOpcion": "Joko Widodo", "respuestaCorrecta": false },
+      { "textoOpcion": "Megawati Sukarnoputri", "respuestaCorrecta": false },
+      { "textoOpcion": "Sukarno", "respuestaCorrecta": true }
+    ]
+  }
+  
   ]
   
     

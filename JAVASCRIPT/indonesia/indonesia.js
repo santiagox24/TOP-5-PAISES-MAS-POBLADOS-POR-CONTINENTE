@@ -1,5 +1,5 @@
 import{data} from "../paises.js"
-import { seleccionarPreguntasAleatorias } from "./preguntas-china.js";
+import { seleccionarPreguntasAleatorias } from "./preguntas-indonesia.js";
 
 let numPreguntas = 0;
 let carruselContenedora = document.getElementById("carrusel-quiz");
