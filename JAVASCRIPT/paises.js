@@ -43,7 +43,7 @@ let data = {
         },
         {
             "nombre": "Pakistán",
-            "url": "http://example.com/pakistan"
+            "url": "../HTML/pakistan.html"
         },
         {
             "nombre": "Bangladesh",
