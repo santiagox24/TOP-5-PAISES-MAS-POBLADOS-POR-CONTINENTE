@@ -197,6 +197,8 @@ function puntaje(seleccionadas) {
     if (!diferentes) {
       puntajeFinal += 20;
     }
+diferentes = false
+
   }
   return puntajeFinal;
 }
