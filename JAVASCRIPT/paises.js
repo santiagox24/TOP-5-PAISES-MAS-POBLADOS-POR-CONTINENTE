@@ -9,7 +9,7 @@ let data = {
   , "Africa": [
         {
             "nombre": "Nigeria",
-            "url": "http://example.com/nigeria"
+            "url": "../HTML/nigeria.html"
         },
         {
             "nombre": "Etiopía",
