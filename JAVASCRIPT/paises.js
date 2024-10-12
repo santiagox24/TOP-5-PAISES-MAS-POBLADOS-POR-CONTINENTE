@@ -113,7 +113,7 @@ let data = {
         },
         {
             "nombre": "Islas Salomón",
-            "url": "http://example.com/islas_salomon"
+            "url": "../HTML/islas-salomon.html"
         }
     ]
 }
