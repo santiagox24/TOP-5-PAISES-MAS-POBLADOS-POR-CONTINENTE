@@ -21,7 +21,7 @@ let data = {
         },
         {
             "nombre": "República Democrática del Congo",
-            "url": "../HTML/egipto.html"
+            "url": "../HTML/republica_dec_congo.html"
         },
         {
             "nombre": "Tanzania",
