@@ -17,7 +17,7 @@ let data = {
         },
         {
             "nombre": "Egipto",
-            "url": "http://example.com/egipto"
+            "url": "../HTML/egipto.html"
         },
         {
             "nombre": "República Democrática del Congo",
