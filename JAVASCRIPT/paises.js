@@ -25,7 +25,7 @@ let data = {
         },
         {
             "nombre": "Tanzania",
-            "url": "http://example.com/tanzania"
+            "url": "../HTML/tanzania.html"
         }
     ],
     "Asia": [
