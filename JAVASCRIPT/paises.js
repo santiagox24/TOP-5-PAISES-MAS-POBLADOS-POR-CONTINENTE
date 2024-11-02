@@ -97,7 +97,7 @@ let data = {
     "Oceania": [
         {
             "nombre": "Australia",
-            "url": "http://example.com/australia"
+            "url": "../HTML/australia.html"
         },
         {
             "nombre": "Papúa Nueva Guinea",
