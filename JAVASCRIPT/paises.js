@@ -105,7 +105,7 @@ let data = {
         },
         {
             "nombre": "Nueva Zelanda",
-            "url": "http://example.com/nueva_zelanda"
+            "url": "../HTML/nueva_zelanda.html"
         },
         {
             "nombre": "Fiyi",
