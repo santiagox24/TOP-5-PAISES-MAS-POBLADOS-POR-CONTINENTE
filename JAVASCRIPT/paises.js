@@ -109,7 +109,7 @@ let data = {
         },
         {
             "nombre": "Fiyi",
-            "url": "http://example.com/fiyi"
+            "url": "../HTML/fiji.html"
         },
         {
             "nombre": "Islas Salomón",
