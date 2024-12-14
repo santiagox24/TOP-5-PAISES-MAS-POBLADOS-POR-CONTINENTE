@@ -53,7 +53,7 @@ let data = {
     "Europe": [
         {
             "nombre": "Rusia",
-            "url": "http://example.com/rusia"
+            "url": "../HTML/rusia.html"
         },
         {
             "nombre": "Alemania",
