@@ -1,0 +1,743 @@
+:root
+{
+    --primary-color : #FFFFFF;
+    --secondary-color : #000;
+    --third-color : #3C3B6E;
+    --fourth-color : #B22234;
+    --color-prueba : #1e4376;
+    --color-prueba2 : #2a548c;
+    --color-primario : #DD0000;
+    --color-secundario: #FFCC00;
+    --color-titulo-section :#000;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.header-menu-image {
+  width: 60px;
+  height: 50px;
+}
+.nav-image {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.header-nav {
+  position: fixed;
+  width: 70%;
+  background-color: var(--secondary-color);
+  border: 2px solid #fff;
+  border-radius: 15px;
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%, -100%);
+  padding: 20px 0;
+  z-index: 5;
+  font-size: 1.6rem;
+}
+.nav-list li {
+  padding: 10px 0 10px 20px;
+  font-weight: 400;
+}
+.nav-list a
+{
+  color: #fff;
+  text-decoration: none;
+}
+.nav-list li:active {
+  background-color: var(--fourth-color);
+}
+
+.header-section-1
+{
+    background-color: var(--color-primario);
+    padding: 40px 30px 40px 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header-section-1 > .search-icon
+{
+    width: 50px;
+    height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.header-section-1 > .menu-icon
+{
+    width: 100px;
+    height: 90px;
+}
+
+.header-section-2{
+
+    padding: 60px 30px 60px 30px;
+    background-color: var(--color-prueba2);
+    color: var(--primary-color);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../IMAGEN/alemania/waving_flag.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-section-2 > h1
+{
+    font-size: 60px;
+}
+
+
+.header-search {
+  position: fixed;
+  width: 70%;
+  background-color: var(--secondary-color);
+  border: 2px solid #fff;
+  border-radius: 15px;
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%, -116%);
+  padding: 20px 0;
+  z-index: 5;
+  font-size: 1.6rem;
+}
+
+
+#searchInput {
+  padding: 10px; /* Espacio interno */
+  border: 2px solid #ccc; /* Borde del input */
+  border-radius: 5px; /* Bordes redondeados */
+  width: 200px; /* Ancho del input */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+
+.header-search-contenedora{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchButton {
+  padding: 10px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#searchButton:hover {
+  background-color: #005f5f;
+}
+
+/* Estilos para el resultado */
+#result {
+  padding: 20px;
+  width: 90%;
+  margin-top: 20px;
+  font-size: 18px;
+  border-radius: 20px;
+
+  max-height: 100px;
+  overflow: auto;
+
+  background-color: #fff;
+}
+
+#etiqueta-pais{
+
+  border: gray;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+main
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > section
+{
+    width: 85%;
+    margin: 40px 0px 40px 0px;
+}
+
+.titulo-seccion
+{
+    background-color: var(--color-secundario);
+    font-size: 45px;
+    color : var(--color-titulo-section);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+}
+
+
+.main-section-1
+{
+    margin-top: 40px;
+}
+
+.main-section-1 > img
+{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 35px;
+}
+
+p
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    line-height: 1.8em;
+}
+
+.main-section-2{
+    margin-top: 60px;
+}
+
+.main-section-2-containers{
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.main-section-2-containers > h2{
+    color: var(--color-pr);
+    font-size: 30px;
+}
+
+.main-section-2-containers > img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.desaparecer{
+    display: none !important;
+}
+
+.portada-quiz{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/*.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}*/
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Estilo general para el contenedor del quiz */
+.portada-quiz {
+  background: linear-gradient(to bottom, #000, var(--color-primario), var(--color-secundario));
+  padding: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  max-width: 872px;
+
+}
+
+/* Estilo para el botón del quiz */
+.quiz-button {
+  background: #000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border: 5px solid white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Cambio de color al pasar el cursor por el botón */
+.quiz-button:hover {
+  background: linear-gradient(to bottom, #0044AA 0%, #0088DD 100%);
+}
+
+/* Estilos generales del contenedor */
+.mySlides{
+  font-family: 'Arial', sans-serif;
+  /*max-width: 400px;*/
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background: linear-gradient(to right,#000, var(--color-primario), var(--color-secundario)); /* Degradado azul */
+}
+
+/* Título del Quiz */
+.quiz-title {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para cada pregunta */
+.question {
+  color: #FFF;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Estilos para las opciones */
+.option {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contenedor-preguntas{
+  margin-left: 60px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.option:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Botón para enviar las respuestas */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  border: 5px solid white;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #33408D;
+}
+
+/* Estilo para botón de navegación en el quiz */
+.navigation-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 20px;
+  background-color: #FFF;
+  color: #4461C2;
+  text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navigation-btn:hover {
+  background-color: #E0E0E0;
+}
+
+.finish-button {
+  background-color: #000;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  border: 5px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.finish-button:hover {
+  background-color: #45a049;
+}
+
+.dot-container{
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  background: linear-gradient(to bottom, var(--color-primario) 0%, var(--color-secundario) 100%);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.container h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: white;
+}
+.container p {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  color: white;
+}
+.container button {
+  background-color: #000;
+  color: white;
+  border: 5px solid white;
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 25px;
+}
+.container button:hover {
+  background-color: #45a049;
+  
+}
+
+.container .puntaje{
+  font-size: 40px;
+  color: white;
+}
+
+footer {
+  background-color: var(--color-primario);
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-content p, .footer-content a {
+  margin: 5px 0;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-links, .social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links a, .social-media a {
+  margin: 5px 0;
+}
+
+
+footer {
+  padding: 15px 5px;
+}
+.footer-content {
+  font-size: 14px;
+}
+
+/* Estilos específicos para tablet */
+@media (min-width: 590px) {
+  .img-descriptions{
+    max-width: 501px;
+    height: 376px;
+  }
+
+  .main-section-1,.main-section-2-containers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-section-2-containers> h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+
+  .portada-quiz{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+ .quiz-button{
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+  }
+
+  .portada-quiz > h3{
+    font-size: 45px;
+  }
+
+  .mySlides{
+    height: 440px;
+    padding-bottom: 40px;
+  }
+
+  .quiz-title{
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+
+  .contenedor-preguntas{
+    font-size: 25px;
+  }
+
+  #finishButton{
+    width: 200px;
+    height: 70px;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+
+  form > input{
+    width: 18px;
+    height: 18px;
+    margin-right: 25px;
+  }
+
+  .section-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo-seccion{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media(min-width : 1100px){
+
+  #menu-icono{
+    display: none;
+  }
+
+
+  .header-nav #nav-button{
+    display: none !important;
+  }
+
+  .header-nav{
+    display: block !important;
+    justify-content: space-evenly;
+    position: static;
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 0;
+    transform: translate(0%, 0%);
+    padding: 20px 0;
+    font-size: 2rem;
+  }
+
+  .nav-list{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .header-section-1{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-search{
+    width: 500px;
+  }
+
+  .header-search #searchInput{
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .header-search #searchButton{
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-section-1{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-section-1 > img{
+    min-width: 501px;
+    height: 400px;
+    margin-right: 30px;
+  }
+
+
+  section > .titulo-seccion{
+    font-size: 55px;
+  }
+}
+
+@media(min-width : 1365px){
+  .main-section-1 > p{
+    font-size: 20px;
+  }
+
+  .section-2 img {
+    min-width: 1002px;
+    height: 752px;
+  }
+
+  .main-section-2-containers > h2{
+    font-size: 45px;
+  }
+
+  .main-section-2-containers > p{
+    font-size: 20px;
+    max-width: 1100px;
+  }
+
+  .section-3 img{
+    min-width: 1002px;
+    height: 752px;
+  }
+
+  #portada-finalizar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 788px;
+    height: 400px;
+  }
+
+
+  .footer-content{
+    font-size: 20px;
+  }
+}
