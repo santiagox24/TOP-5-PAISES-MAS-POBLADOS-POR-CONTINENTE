@@ -61,11 +61,11 @@ let data = {
         },
         {
             "nombre": "Reino Unido",
-            "url": "http://example.com/reino_unido"
+            "url": "ktguyg"
         },
         {
             "nombre": "Francia",
-            "url": "http://example.com/francia"
+            "url": "../HTML/francia.html"
         },
         {
             "nombre": "Italia",
